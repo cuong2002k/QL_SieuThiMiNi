@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f3368c7be03344a995c30e4d14d41b3f" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="SieuThiMiniModel.ChamCong" Width="1.5" PointX="0.75" PointY="4.75" />
+        <EntityTypeShape EntityType="SieuThiMiniModel.DSKhuyenMai" Width="1.5" PointX="0.75" PointY="1.125" />
+        <EntityTypeShape EntityType="SieuThiMiniModel.GiaoCa" Width="1.5" PointX="2.75" PointY="4.75" />
+        <EntityTypeShape EntityType="SieuThiMiniModel.HangHoa" Width="1.5" PointX="4.75" PointY="4.75" />
+        <EntityTypeShape EntityType="SieuThiMiniModel.HoaDon" Width="1.5" PointX="5.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SieuThiMiniModel.HoaDonCT" Width="1.5" PointX="6.75" PointY="4.75" />
+        <EntityTypeShape EntityType="SieuThiMiniModel.KhachHang" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SieuThiMiniModel.KhuyenMai" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="SieuThiMiniModel.MucHangKhachHang" Width="1.5" PointX="0.75" PointY="8.75" />
+        <EntityTypeShape EntityType="SieuThiMiniModel.NhaCungCap" Width="1.5" PointX="8.75" PointY="4.75" />
+        <EntityTypeShape EntityType="SieuThiMiniModel.NhanVien" Width="1.5" PointX="6.75" PointY="8.75" />
+        <EntityTypeShape EntityType="SieuThiMiniModel.NhomHang" Width="1.5" PointX="8.75" PointY="7.75" />
+        <EntityTypeShape EntityType="SieuThiMiniModel.PhanCa" Width="1.5" PointX="9.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SieuThiMiniModel.PhanQuyen" Width="1.5" PointX="2.75" PointY="9.75" />
+        <EntityTypeShape EntityType="SieuThiMiniModel.PhieuNhapHang" Width="1.5" PointX="10.75" PointY="3.75" />
+        <EntityTypeShape EntityType="SieuThiMiniModel.PhieuNhapHangCT" Width="1.5" PointX="10.75" PointY="6.75" />
+        <EntityTypeShape EntityType="SieuThiMiniModel.PhieuTraHang" Width="1.5" PointX="8.75" PointY="10.75" />
+        <EntityTypeShape EntityType="SieuThiMiniModel.PhieuTraHangCT" Width="1.5" PointX="10.75" PointY="9.75" />
+        <EntityTypeShape EntityType="SieuThiMiniModel.sysdiagrams" Width="1.5" PointX="11.75" PointY="0.75" />
+        <AssociationConnector Association="SieuThiMiniModel.FK_KhuyenMai_DSKhuyenMai" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
