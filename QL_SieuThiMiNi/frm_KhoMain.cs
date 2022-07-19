@@ -42,5 +42,10 @@ namespace QL_SieuThiMiNi
         {
             OpenChildForm(new frm_KhoHangHoa());
         }
+
+        private void btnnhacungcap_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frm_KhoNhaCungCap());
+        }
     }
 }

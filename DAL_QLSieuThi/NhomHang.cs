@@ -14,6 +14,12 @@ namespace DAL_QLSieuThi
     
     public partial class NhomHang
     {
+        public NhomHang(string maNH, string tenNH)
+        {
+            MaNH = maNH;
+            TenNH = tenNH;
+        }
+        public NhomHang() { }
         public string MaNH { get; set; }
         public string TenNH { get; set; }
     }

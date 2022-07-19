@@ -14,7 +14,13 @@ namespace DAL_QLSieuThi
     
     public partial class HangHoa
     {
-        public HangHoa(string maHH, string tenHang, string maNH, string xuatXu, int? giaNhap, int? giaBan, string donViTinh, string nhaCungCap, string maVach, int? dinhMuc, int? soLuong, bool? trangThaiBan, int? vAT)
+       
+        public HangHoa()
+        {
+
+        }
+
+        public HangHoa(string maHH, string tenHang, string maNH, string xuatXu, int giaNhap, int giaBan, string donViTinh, string nhaCungCap, string maVach, int dinhMuc, int soLuong, bool trangThaiBan, int vAT)
         {
             MaHH = maHH;
             TenHang = tenHang;
@@ -30,22 +36,19 @@ namespace DAL_QLSieuThi
             TrangThaiBan = trangThaiBan;
             VAT = vAT;
         }
-        public HangHoa()
-        {
 
-        }
         public string MaHH { get; set; }
         public string TenHang { get; set; }
         public string MaNH { get; set; }
         public string XuatXu { get; set; }
-        public Nullable<int> GiaNhap { get; set; }
-        public Nullable<int> GiaBan { get; set; }
+        public int GiaNhap { get; set; }
+        public int GiaBan { get; set; }
         public string DonViTinh { get; set; }
         public string NhaCungCap { get; set; }
         public string MaVach { get; set; }
-        public Nullable<int> DinhMuc { get; set; }
-        public Nullable<int> SoLuong { get; set; }
-        public Nullable<bool> TrangThaiBan { get; set; }
-        public Nullable<int> VAT { get; set; }
+        public int DinhMuc { get; set; }
+        public int SoLuong { get; set; }
+        public bool TrangThaiBan { get; set; }
+        public int VAT { get; set; }
     }
 }

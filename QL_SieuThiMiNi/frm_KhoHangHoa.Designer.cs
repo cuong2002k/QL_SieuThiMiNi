@@ -29,12 +29,6 @@
         private void InitializeComponent()
         {
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.btnthem = new System.Windows.Forms.ToolStripButton();
-            this.btnsua = new System.Windows.Forms.ToolStripButton();
-            this.btnxoa = new System.Windows.Forms.ToolStripButton();
-            this.btnlammoi = new System.Windows.Forms.ToolStripButton();
-            this.btnthongke = new System.Windows.Forms.ToolStripButton();
-            this.btnthoat = new System.Windows.Forms.ToolStripButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dtgvHangHoa = new System.Windows.Forms.DataGridView();
@@ -65,6 +59,12 @@
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.txtMaHH = new Guna.UI2.WinForms.Guna2TextBox();
             this.cboNH = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.btnthem = new System.Windows.Forms.ToolStripButton();
+            this.btnsua = new System.Windows.Forms.ToolStripButton();
+            this.btnxoa = new System.Windows.Forms.ToolStripButton();
+            this.btnlammoi = new System.Windows.Forms.ToolStripButton();
+            this.btnthongke = new System.Windows.Forms.ToolStripButton();
+            this.btnthoat = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -86,69 +86,6 @@
             this.toolStrip1.Size = new System.Drawing.Size(1054, 54);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // btnthem
-            // 
-            this.btnthem.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_add_32;
-            this.btnthem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnthem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnthem.Name = "btnthem";
-            this.btnthem.Size = new System.Drawing.Size(41, 51);
-            this.btnthem.Text = "Thêm";
-            this.btnthem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
-            // 
-            // btnsua
-            // 
-            this.btnsua.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_available_updates_32;
-            this.btnsua.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnsua.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnsua.Name = "btnsua";
-            this.btnsua.Size = new System.Drawing.Size(36, 51);
-            this.btnsua.Text = "Sửa";
-            this.btnsua.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnsua.Click += new System.EventHandler(this.btnsua_Click);
-            // 
-            // btnxoa
-            // 
-            this.btnxoa.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_close_32;
-            this.btnxoa.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnxoa.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnxoa.Name = "btnxoa";
-            this.btnxoa.Size = new System.Drawing.Size(36, 51);
-            this.btnxoa.Text = "Xóa";
-            this.btnxoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
-            // 
-            // btnlammoi
-            // 
-            this.btnlammoi.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_clear_32;
-            this.btnlammoi.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnlammoi.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnlammoi.Name = "btnlammoi";
-            this.btnlammoi.Size = new System.Drawing.Size(58, 51);
-            this.btnlammoi.Text = "Làm Mới";
-            this.btnlammoi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // btnthongke
-            // 
-            this.btnthongke.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_report_card_32;
-            this.btnthongke.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnthongke.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnthongke.Name = "btnthongke";
-            this.btnthongke.Size = new System.Drawing.Size(60, 51);
-            this.btnthongke.Text = "Thống kê";
-            this.btnthongke.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // btnthoat
-            // 
-            this.btnthoat.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_sign_out_32;
-            this.btnthoat.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnthoat.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnthoat.Name = "btnthoat";
-            this.btnthoat.Size = new System.Drawing.Size(41, 51);
-            this.btnthoat.Text = "Thoát";
-            this.btnthoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // panel1
             // 
@@ -179,6 +116,7 @@
             this.dtgvHangHoa.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgvHangHoa.Size = new System.Drawing.Size(1048, 163);
             this.dtgvHangHoa.TabIndex = 0;
+            this.dtgvHangHoa.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtgvHangHoa_CellMouseClick);
             // 
             // panel2
             // 
@@ -662,6 +600,72 @@
             this.cboNH.ShadowDecoration.Parent = this.cboNH;
             this.cboNH.Size = new System.Drawing.Size(200, 36);
             this.cboNH.TabIndex = 0;
+            // 
+            // btnthem
+            // 
+            this.btnthem.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_add_32;
+            this.btnthem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnthem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnthem.Name = "btnthem";
+            this.btnthem.Size = new System.Drawing.Size(41, 51);
+            this.btnthem.Text = "Thêm";
+            this.btnthem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
+            // 
+            // btnsua
+            // 
+            this.btnsua.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_available_updates_32;
+            this.btnsua.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnsua.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnsua.Name = "btnsua";
+            this.btnsua.Size = new System.Drawing.Size(36, 51);
+            this.btnsua.Text = "Sửa";
+            this.btnsua.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnsua.Click += new System.EventHandler(this.btnsua_Click);
+            // 
+            // btnxoa
+            // 
+            this.btnxoa.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_close_32;
+            this.btnxoa.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnxoa.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnxoa.Name = "btnxoa";
+            this.btnxoa.Size = new System.Drawing.Size(36, 51);
+            this.btnxoa.Text = "Xóa";
+            this.btnxoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
+            // 
+            // btnlammoi
+            // 
+            this.btnlammoi.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_clear_32;
+            this.btnlammoi.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnlammoi.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnlammoi.Name = "btnlammoi";
+            this.btnlammoi.Size = new System.Drawing.Size(58, 51);
+            this.btnlammoi.Text = "Làm Mới";
+            this.btnlammoi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnlammoi.Click += new System.EventHandler(this.btnlammoi_Click);
+            // 
+            // btnthongke
+            // 
+            this.btnthongke.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_report_card_32;
+            this.btnthongke.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnthongke.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnthongke.Name = "btnthongke";
+            this.btnthongke.Size = new System.Drawing.Size(60, 51);
+            this.btnthongke.Text = "Thống kê";
+            this.btnthongke.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnthongke.Click += new System.EventHandler(this.btnthongke_Click);
+            // 
+            // btnthoat
+            // 
+            this.btnthoat.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_sign_out_32;
+            this.btnthoat.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnthoat.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnthoat.Name = "btnthoat";
+            this.btnthoat.Size = new System.Drawing.Size(41, 51);
+            this.btnthoat.Text = "Thoát";
+            this.btnthoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
             // 
             // frm_KhoHangHoa
             // 

@@ -70,6 +70,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmrpt_HangHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmrpt_HangHoa.Designer.cs">
+      <DependentUpon>frmrpt_HangHoa.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_KhoHangHoa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +88,18 @@
     <Compile Include="frm_KhoMain.Designer.cs">
       <DependentUpon>frm_KhoMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_KhoNhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_KhoNhaCungCap.Designer.cs">
+      <DependentUpon>frm_KhoNhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_khoNhomHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_khoNhomHang.Designer.cs">
+      <DependentUpon>frm_khoNhomHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,11 +108,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rptHangHoa.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptHangHoa.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="frmrpt_HangHoa.resx">
+      <DependentUpon>frmrpt_HangHoa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_KhoHangHoa.resx">
       <DependentUpon>frm_KhoHangHoa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_KhoMain.resx">
       <DependentUpon>frm_KhoMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_KhoNhaCungCap.resx">
+      <DependentUpon>frm_KhoNhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_khoNhomHang.resx">
+      <DependentUpon>frm_khoNhomHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Main.resx">
       <DependentUpon>frm_Main.cs</DependentUpon>
@@ -109,6 +142,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="rptHangHoa.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptHangHoa.cs</LastGenOutput>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -178,6 +215,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-sign-out-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

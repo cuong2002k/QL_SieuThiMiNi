@@ -14,10 +14,6 @@ namespace BUS_QLSieuThi
         {
             return dalqlykho.KHO_LayDSHH();
         }
-        public List<NhomHang> KHO_LayDSNH()
-        {
-            return dalqlykho.KHO_LayDSNH();
-        }
         public List<NhaCungCap> KHO_LayDSNCC()
         {
             return dalqlykho.KHO_LayDSNCC();
@@ -34,5 +30,60 @@ namespace BUS_QLSieuThi
         {
             return dalqlykho.KHO_XoaHangHoa(MaHH);
         }
+        public List<HangHoa> KHO_TimKiemHangHoa(string MaHH)
+        {
+            return dalqlykho.KHO_TimKiemHangHoa(MaHH);
+        }
+
+        //-----------------------------------nhà cung cấp---------
+        //them
+        public bool Kho_ThemNhaCungCap(NhaCungCap nhacungcap)
+        {
+            return dalqlykho.Kho_ThemNhaCungCap(nhacungcap);
+        }
+        //xoa
+        public bool Kho_XoaNhaCungCap(string MaNCC)
+        {
+            return dalqlykho.Kho_XoaNhaCungCap(MaNCC);
+        }
+        //sua
+        public bool Kho_SuaNhaCungCap(NhaCungCap ncc)
+        {
+            return dalqlykho.Kho_SuaNhaCungCap(ncc);
+        }
+        //tim kiem
+        public List<NhaCungCap> KHO_TimNCC(string mancc)
+        {
+            return dalqlykho.KHO_TimNCC(mancc);
+        }
+        //-------------------------------------------------
+        //-----------------------------------------nhóm hàng------------------------------------------------//
+        //hienthi
+        public List<NhomHang> KHO_LayDSNH()
+        {
+            return dalqlykho.KHO_LayDSNH();
+        }
+        //them 
+        public bool KHO_ThemNH(NhomHang nhomhang)
+        {
+            return dalqlykho.KHO_ThemNH(nhomhang);
+        }
+        //xoa
+        public bool KHO_XoaNH(string MaNH)
+        {
+            return dalqlykho.KHO_XoaNH(MaNH);
+        }
+        //sua
+        public bool KHO_SuaNH(NhomHang nhomhang)
+        {
+            return dalqlykho.KHO_SuaNH(nhomhang);
+        }
+        //timkiem
+        public List<NhomHang> KHO_TimNH(string MaNH)
+        {
+            return dalqlykho.KHO_TimNH(MaNH);
+        }
+        //-----------------------------------------nhóm hàng end------------------------------------------------//
+
     }
 }
