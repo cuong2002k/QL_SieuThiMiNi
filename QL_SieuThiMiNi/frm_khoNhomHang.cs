@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DAL_QLSieuThi;
 using BUS_QLSieuThi;
+
 namespace QL_SieuThiMiNi
 {
     public partial class frm_khoNhomHang : Form
@@ -126,5 +127,6 @@ namespace QL_SieuThiMiNi
                 MessageBox.Show("Xóa Nhóm Hàng Thất bại");
             }
         }
+        //
     }
 }
