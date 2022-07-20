@@ -56,6 +56,8 @@
     <Compile Include="ChamCong.cs">
       <DependentUpon>QLSieuThi.tt</DependentUpon>
     </Compile>
+    <Compile Include="DAL_KhachHang.cs" />
+    <Compile Include="DAL_NhanVien.cs" />
     <Compile Include="DAL_QLyKho.cs" />
     <Compile Include="DbConnect.cs" />
     <Compile Include="DSKhuyenMai.cs">

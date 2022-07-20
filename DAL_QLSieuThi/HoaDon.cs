@@ -28,6 +28,18 @@ namespace DAL_QLSieuThi
         {
         }
 
+        public HoaDon(string soHD, string maNV, string ngayLap, string maKH, int vAT, int tienKhachDua, int tienGuiKhach, int thanhTien)
+        {
+            SoHD = soHD;
+            MaNV = maNV;
+            NgayLap = ngayLap;
+            MaKH = maKH;
+            VAT = vAT;
+            TienKhachDua = tienKhachDua;
+            TienGuiKhach = tienGuiKhach;
+            ThanhTien = thanhTien;
+        }
+
         public HoaDon(string soHD, string maNV, string ngayLap, string maKH, int vAT, int tienKhachDua, int tienGuiKhach, int tongTienKM, int thanhTien)
         {
             SoHD = soHD;

@@ -33,7 +33,7 @@
             this.btnkhachhang = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.btnkho = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnNhanVien = new System.Windows.Forms.Button();
             this.btn_BanHang = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -72,6 +72,7 @@
             this.btnkhachhang.Text = "Khách Hàng";
             this.btnkhachhang.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnkhachhang.UseVisualStyleBackColor = false;
+            this.btnkhachhang.Click += new System.EventHandler(this.btnkhachhang_Click);
             // 
             // button4
             // 
@@ -110,23 +111,24 @@
             this.btnkho.UseVisualStyleBackColor = false;
             this.btnkho.Click += new System.EventHandler(this.btnkho_Click);
             // 
-            // button2
+            // btnNhanVien
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.AppStarting;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_user_80;
-            this.button2.Location = new System.Drawing.Point(246, 8);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(235, 143);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Nhân Viên";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnNhanVien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnNhanVien.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.btnNhanVien.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnNhanVien.FlatAppearance.BorderSize = 0;
+            this.btnNhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNhanVien.ForeColor = System.Drawing.Color.Black;
+            this.btnNhanVien.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_user_80;
+            this.btnNhanVien.Location = new System.Drawing.Point(246, 8);
+            this.btnNhanVien.Name = "btnNhanVien";
+            this.btnNhanVien.Size = new System.Drawing.Size(235, 143);
+            this.btnNhanVien.TabIndex = 13;
+            this.btnNhanVien.Text = "Nhân Viên";
+            this.btnNhanVien.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnNhanVien.UseVisualStyleBackColor = false;
+            this.btnNhanVien.Click += new System.EventHandler(this.btnNhanVien_Click);
             // 
             // btn_BanHang
             // 
@@ -145,6 +147,7 @@
             this.btn_BanHang.Text = "Bán Hàng";
             this.btn_BanHang.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_BanHang.UseVisualStyleBackColor = false;
+            this.btn_BanHang.Click += new System.EventHandler(this.btn_BanHang_Click);
             // 
             // frmMain
             // 
@@ -155,7 +158,7 @@
             this.Controls.Add(this.btnkhachhang);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.btnkho);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnNhanVien);
             this.Controls.Add(this.btn_BanHang);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -173,7 +176,7 @@
         private System.Windows.Forms.Button btnkhachhang;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnkho;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnNhanVien;
         private System.Windows.Forms.Button btn_BanHang;
     }
 }

@@ -37,6 +37,18 @@ namespace DAL_QLSieuThi
             NamGanBo = namGanBo;
         }
 
+        public KhachHang(string maKH, string tenKH, string cMND, string diaChi, string sDT, int diem, string ngayTao, int namGanBo)
+        {
+            MaKH = maKH;
+            TenKH = tenKH;
+            CMND = cMND;
+            DiaChi = diaChi;
+            SDT = sDT;
+            Diem = diem;
+            NgayTao = ngayTao;
+            NamGanBo = namGanBo;
+        }
+
         public KhachHang()
         {
         }

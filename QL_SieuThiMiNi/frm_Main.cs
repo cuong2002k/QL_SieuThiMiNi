@@ -22,5 +22,23 @@ namespace QL_SieuThiMiNi
             frm_KhoMain frm = new frm_KhoMain();
             frm.ShowDialog();
         }
+
+        private void btnNhanVien_Click(object sender, EventArgs e)
+        {
+            frm_NhanVien frm = new frm_NhanVien();
+            frm.ShowDialog();
+        }
+
+        private void btnkhachhang_Click(object sender, EventArgs e)
+        {
+            frm_KhachHang frm = new frm_KhachHang();
+            frm.ShowDialog();
+        }
+
+        private void btn_BanHang_Click(object sender, EventArgs e)
+        {
+            frm_BanHang banhang = new frm_BanHang();
+            banhang.ShowDialog();
+        }
     }
 }

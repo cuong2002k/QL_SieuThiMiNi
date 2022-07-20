@@ -79,7 +79,7 @@ namespace QL_SieuThiMiNi
                 {
                     if (i == null)
                     {
-                        HangHoa hanghoa = new HangHoa(txtMaHH.Text, txtTenHH.Text, cboNH.Text, txtXuatXu.Text, int.Parse(txtGiaNhap.Text), int.Parse(txtGiaBan.Text), txtDVT.Text, cboNCC.Text, txtMaVach.Text, int.Parse(txtDinhMuc.Text), int.Parse(txtSL.Text), Convert.ToBoolean(int.Parse(txtTrangThai.Text)), int.Parse(txtVAT.Text));
+                        HangHoa hanghoa = new HangHoa(txtMaHH.Text, txtTenHH.Text, cboNH.Text, txtXuatXu.Text, int.Parse(txtGiaNhap.Text), int.Parse(txtGiaBan.Text), txtDVT.Text, cboNCC.Text, txtMaVach.Text, int.Parse(txtDinhMuc.Text), int.Parse(txtSL.Text),txtTrangThai.Text=="True"?true : false, int.Parse(txtVAT.Text));
                         if (busQLKHO.KHO_ThemHangHoa(hanghoa))
                         {
                             MessageBox.Show("Thêm hàng hóa thành công");
@@ -114,7 +114,7 @@ namespace QL_SieuThiMiNi
                         return;
                     }
                 }
-                HangHoa hanghoa = new HangHoa(txtMaHH.Text, txtTenHH.Text, cboNH.Text, txtXuatXu.Text, int.Parse(txtGiaNhap.Text), int.Parse(txtGiaBan.Text), txtDVT.Text, cboNCC.Text, txtMaVach.Text, int.Parse(txtDinhMuc.Text), int.Parse(txtSL.Text), Convert.ToBoolean(int.Parse(txtTrangThai.Text)), int.Parse(txtVAT.Text));
+                HangHoa hanghoa = new HangHoa(txtMaHH.Text, txtTenHH.Text, cboNH.Text, txtXuatXu.Text, int.Parse(txtGiaNhap.Text), int.Parse(txtGiaBan.Text), txtDVT.Text, cboNCC.Text, txtMaVach.Text, int.Parse(txtDinhMuc.Text), int.Parse(txtSL.Text), txtTrangThai.Text == "True" ? true : false, int.Parse(txtVAT.Text));
                 if (busQLKHO.KHO_SuaHangHoa(hanghoa))
                 {
                     MessageBox.Show("Sửa Hàng hóa thành công");

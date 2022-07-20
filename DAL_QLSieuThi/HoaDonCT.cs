@@ -16,10 +16,20 @@ namespace DAL_QLSieuThi
     {
         public string SoHD { get; set; }
         public string MaHH { get; set; }
-        public Nullable<int> Soluong { get; set; }
-        public Nullable<int> DonGia { get; set; }
-        public Nullable<int> ThanhTien { get; set; }
-        public Nullable<int> VAT { get; set; }
+        public int Soluong { get; set; }
+        public int DonGia { get; set; }
+        public int ThanhTien { get; set; }
+        public int VAT { get; set; }
         public string MaKM { get; set; }
+
+        public HoaDonCT(string soHD, string maHH, int soluong, int donGia, int thanhTien, int vAT)
+        {
+            SoHD = soHD;
+            MaHH = maHH;
+            Soluong = soluong;
+            DonGia = donGia;
+            ThanhTien = thanhTien;
+            VAT = vAT;
+        }
     }
 }

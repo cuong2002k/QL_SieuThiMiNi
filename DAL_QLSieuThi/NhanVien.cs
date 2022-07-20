@@ -33,6 +33,24 @@ namespace DAL_QLSieuThi
             MaCong = maCong;
         }
 
+        public NhanVien(string maNV, string tenNV, bool gioiTinh, string ngaySinh, string sDT, string diaChi, string email, string userName, string password, string maQuyen, string ngayVaoLam, string ngayNghiViec, bool trangThaiTaiKhoan, int luong)
+        {
+            MaNV = maNV;
+            TenNV = tenNV;
+            GioiTinh = gioiTinh;
+            NgaySinh = ngaySinh;
+            SDT = sDT;
+            DiaChi = diaChi;
+            Email = email;
+            UserName = userName;
+            Password = password;
+            MaQuyen = maQuyen;
+            NgayVaoLam = ngayVaoLam;
+            NgayNghiViec = ngayNghiViec;
+            TrangThaiTaiKhoan = trangThaiTaiKhoan;
+            Luong = luong;
+        }
+
         public NhanVien()
         {
         }

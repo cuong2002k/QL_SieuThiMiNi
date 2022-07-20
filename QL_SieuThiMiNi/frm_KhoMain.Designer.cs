@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_KhoMain));
             this.panelchildform = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
@@ -87,6 +88,7 @@
             this.guna2Button1.TabIndex = 7;
             this.guna2Button1.Text = "Thoát";
             this.guna2Button1.UseTransparentBackground = true;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2Button5
             // 
@@ -220,6 +222,7 @@
             this.ClientSize = new System.Drawing.Size(800, 497);
             this.Controls.Add(this.panelchildform);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_KhoMain";
             this.Text = "Quản Lý Kho Hàng";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
