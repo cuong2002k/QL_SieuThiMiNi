@@ -14,6 +14,16 @@ namespace DAL_QLSieuThi
     
     public partial class PhanQuyen
     {
+        public PhanQuyen()
+        {
+        }
+
+        public PhanQuyen(string maQuyen, string tenQuyen)
+        {
+            MaQuyen = maQuyen;
+            TenQuyen = tenQuyen;
+        }
+
         public string MaQuyen { get; set; }
         public string TenQuyen { get; set; }
     }

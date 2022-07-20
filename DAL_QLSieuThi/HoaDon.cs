@@ -18,10 +18,27 @@ namespace DAL_QLSieuThi
         public string MaNV { get; set; }
         public string NgayLap { get; set; }
         public string MaKH { get; set; }
-        public Nullable<int> VAT { get; set; }
-        public Nullable<int> TienKhachDua { get; set; }
-        public Nullable<int> TienGuiKhach { get; set; }
-        public Nullable<int> TongTienKM { get; set; }
-        public Nullable<int> ThanhTien { get; set; }
+        public int  VAT { get; set; }
+        public int  TienKhachDua { get; set; }
+        public int TienGuiKhach { get; set; }
+        public int TongTienKM { get; set; }
+        public int ThanhTien { get; set; }
+
+        public HoaDon()
+        {
+        }
+
+        public HoaDon(string soHD, string maNV, string ngayLap, string maKH, int vAT, int tienKhachDua, int tienGuiKhach, int tongTienKM, int thanhTien)
+        {
+            SoHD = soHD;
+            MaNV = maNV;
+            NgayLap = ngayLap;
+            MaKH = maKH;
+            VAT = vAT;
+            TienKhachDua = tienKhachDua;
+            TienGuiKhach = tienGuiKhach;
+            TongTienKM = tongTienKM;
+            ThanhTien = thanhTien;
+        }
     }
 }

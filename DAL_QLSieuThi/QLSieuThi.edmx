@@ -190,8 +190,6 @@
           <Property Name="MaHangNhap" Type="varchar" MaxLength="10" Nullable="false" />
           <Property Name="SoPhieu" Type="varchar" MaxLength="10" Nullable="false" />
           <Property Name="SoLuongNhap" Type="int" />
-          <Property Name="DonGia" Type="float" />
-          <Property Name="ThanhTien" Type="float" />
           <Property Name="VAT" Type="int" />
         </EntityType>
         <EntityType Name="PhieuTraHang">
@@ -211,7 +209,6 @@
           <Property Name="MaHangTra" Type="varchar" MaxLength="10" Nullable="false" />
           <Property Name="SoPhieuTra" Type="varchar" MaxLength="10" Nullable="false" />
           <Property Name="SoLuongTra" Type="int" />
-          <Property Name="ThanhTien" Type="int" />
           <Property Name="lydotrahang" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="sysdiagrams">
@@ -477,8 +474,6 @@
           <Property Name="MaHangNhap" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
           <Property Name="SoPhieu" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
           <Property Name="SoLuongNhap" Type="Int32" />
-          <Property Name="DonGia" Type="Double" />
-          <Property Name="ThanhTien" Type="Double" />
           <Property Name="VAT" Type="Int32" />
         </EntityType>
         <EntityType Name="PhieuTraHang">
@@ -498,7 +493,6 @@
           <Property Name="MaHangTra" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
           <Property Name="SoPhieuTra" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
           <Property Name="SoLuongTra" Type="Int32" />
-          <Property Name="ThanhTien" Type="Int32" />
           <Property Name="lydotrahang" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="sysdiagrams">
@@ -724,8 +718,6 @@
             <EntityTypeMapping TypeName="SieuThiMiniModel.PhieuNhapHangCT">
               <MappingFragment StoreEntitySet="PhieuNhapHangCT">
                 <ScalarProperty Name="VAT" ColumnName="VAT" />
-                <ScalarProperty Name="ThanhTien" ColumnName="ThanhTien" />
-                <ScalarProperty Name="DonGia" ColumnName="DonGia" />
                 <ScalarProperty Name="SoLuongNhap" ColumnName="SoLuongNhap" />
                 <ScalarProperty Name="SoPhieu" ColumnName="SoPhieu" />
                 <ScalarProperty Name="MaHangNhap" ColumnName="MaHangNhap" />
@@ -746,7 +738,6 @@
             <EntityTypeMapping TypeName="SieuThiMiniModel.PhieuTraHangCT">
               <MappingFragment StoreEntitySet="PhieuTraHangCT">
                 <ScalarProperty Name="lydotrahang" ColumnName="lydotrahang" />
-                <ScalarProperty Name="ThanhTien" ColumnName="ThanhTien" />
                 <ScalarProperty Name="SoLuongTra" ColumnName="SoLuongTra" />
                 <ScalarProperty Name="SoPhieuTra" ColumnName="SoPhieuTra" />
                 <ScalarProperty Name="MaHangTra" ColumnName="MaHangTra" />

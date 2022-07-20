@@ -84,6 +84,27 @@ namespace BUS_QLSieuThi
             return dalqlykho.KHO_TimNH(MaNH);
         }
         //-----------------------------------------nhóm hàng end------------------------------------------------//
+        //-----------------------------------------phieuNhap------------------------------------------------//
 
+        //them 
+        public Boolean KHO_LuuPhieuNhap(PhieuNhapHang phieunhap)
+        {
+            return dalqlykho.KHO_LuuPhieuNhap(phieunhap);
+        }
+        //xoa
+        //sua
+
+        //-----------------------------------------phieuNhap end------------------------------------------------//
+        //-----------------------------------------phieuNhapct------------------------------------------------//
+
+        //them 
+        public Boolean KHO_LuuPhieuNhapCT(PhieuNhapHangCT phieunhapct)
+        {
+            return dalqlykho.KHO_LuuPhieuNhapCT(phieunhapct);
+        }
+        //xoa
+        //sua
+
+        //-----------------------------------------nha cung cap end------------------------------------------------//
     }
 }

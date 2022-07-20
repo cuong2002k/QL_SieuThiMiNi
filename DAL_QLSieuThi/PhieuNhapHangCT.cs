@@ -14,11 +14,17 @@ namespace DAL_QLSieuThi
     
     public partial class PhieuNhapHangCT
     {
+        public PhieuNhapHangCT(string maHangNhap, string soPhieu, int soLuongNhap, int vAT)
+        {
+            MaHangNhap = maHangNhap;
+            SoPhieu = soPhieu;
+            SoLuongNhap = soLuongNhap;
+            VAT = vAT;
+        }
+        public PhieuNhapHangCT() { }
         public string MaHangNhap { get; set; }
         public string SoPhieu { get; set; }
-        public Nullable<int> SoLuongNhap { get; set; }
-        public Nullable<double> DonGia { get; set; }
-        public Nullable<double> ThanhTien { get; set; }
-        public Nullable<int> VAT { get; set; }
+        public int SoLuongNhap { get; set; }
+        public int VAT { get; set; }
     }
 }

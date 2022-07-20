@@ -14,9 +14,32 @@ namespace DAL_QLSieuThi
     
     public partial class NhanVien
     {
+        public NhanVien(string maNV, string tenNV, bool gioiTinh, string ngaySinh, string sDT, string diaChi, string email, string userName, string password, string maQuyen, string ngayVaoLam, string ngayNghiViec, bool trangThaiTaiKhoan, int luong, string maCong)
+        {
+            MaNV = maNV;
+            TenNV = tenNV;
+            GioiTinh = gioiTinh;
+            NgaySinh = ngaySinh;
+            SDT = sDT;
+            DiaChi = diaChi;
+            Email = email;
+            UserName = userName;
+            Password = password;
+            MaQuyen = maQuyen;
+            NgayVaoLam = ngayVaoLam;
+            NgayNghiViec = ngayNghiViec;
+            TrangThaiTaiKhoan = trangThaiTaiKhoan;
+            Luong = luong;
+            MaCong = maCong;
+        }
+
+        public NhanVien()
+        {
+        }
+
         public string MaNV { get; set; }
         public string TenNV { get; set; }
-        public Nullable<bool> GioiTinh { get; set; }
+        public bool GioiTinh { get; set; }
         public string NgaySinh { get; set; }
         public string SDT { get; set; }
         public string DiaChi { get; set; }
@@ -26,8 +49,8 @@ namespace DAL_QLSieuThi
         public string MaQuyen { get; set; }
         public string NgayVaoLam { get; set; }
         public string NgayNghiViec { get; set; }
-        public Nullable<bool> TrangThaiTaiKhoan { get; set; }
-        public Nullable<int> Luong { get; set; }
+        public bool TrangThaiTaiKhoan { get; set; }
+        public int Luong { get; set; }
         public string MaCong { get; set; }
     }
 }

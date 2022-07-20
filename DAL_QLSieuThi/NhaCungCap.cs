@@ -14,16 +14,16 @@ namespace DAL_QLSieuThi
     
     public partial class NhaCungCap
     {
-        public NhaCungCap()
-        {
-
-        }
         public NhaCungCap(string maNCC, string tenNCC, string diaChi, string sDT)
         {
             MaNCC = maNCC;
             TenNCC = tenNCC;
             DiaChi = diaChi;
             SDT = sDT;
+        }
+
+        public NhaCungCap()
+        {
         }
 
         public string MaNCC { get; set; }

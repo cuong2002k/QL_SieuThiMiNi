@@ -47,5 +47,15 @@ namespace QL_SieuThiMiNi
         {
             OpenChildForm(new frm_KhoNhaCungCap());
         }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frm_khoNhomHang());
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frm_khoNhapHang());
+        }
     }
 }

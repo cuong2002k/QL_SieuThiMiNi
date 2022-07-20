@@ -14,12 +14,6 @@ namespace DAL_QLSieuThi
     
     public partial class HangHoa
     {
-       
-        public HangHoa()
-        {
-
-        }
-
         public HangHoa(string maHH, string tenHang, string maNH, string xuatXu, int giaNhap, int giaBan, string donViTinh, string nhaCungCap, string maVach, int dinhMuc, int soLuong, bool trangThaiBan, int vAT)
         {
             MaHH = maHH;
@@ -36,7 +30,7 @@ namespace DAL_QLSieuThi
             TrangThaiBan = trangThaiBan;
             VAT = vAT;
         }
-
+        public HangHoa() { }
         public string MaHH { get; set; }
         public string TenHang { get; set; }
         public string MaNH { get; set; }

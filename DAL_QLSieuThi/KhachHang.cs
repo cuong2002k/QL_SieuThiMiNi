@@ -19,9 +19,26 @@ namespace DAL_QLSieuThi
         public string CMND { get; set; }
         public string DiaChi { get; set; }
         public string SDT { get; set; }
-        public Nullable<int> Diem { get; set; }
+        public int Diem { get; set; }
         public string MaMucHang { get; set; }
         public string NgayTao { get; set; }
-        public Nullable<int> NamGanBo { get; set; }
+        public int NamGanBo { get; set; }
+
+        public KhachHang(string maKH, string tenKH, string cMND, string diaChi, string sDT, int diem, string maMucHang, string ngayTao, int namGanBo)
+        {
+            MaKH = maKH;
+            TenKH = tenKH;
+            CMND = cMND;
+            DiaChi = diaChi;
+            SDT = sDT;
+            Diem = diem;
+            MaMucHang = maMucHang;
+            NgayTao = ngayTao;
+            NamGanBo = namGanBo;
+        }
+
+        public KhachHang()
+        {
+        }
     }
 }

@@ -33,7 +33,7 @@
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnLoaiHang = new Guna.UI2.WinForms.Guna2Button();
             this.btnnhacungcap = new Guna.UI2.WinForms.Guna2Button();
             this.btnHangHoa = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -57,7 +57,7 @@
             this.panel1.Controls.Add(this.guna2Button1);
             this.panel1.Controls.Add(this.guna2Button5);
             this.panel1.Controls.Add(this.guna2Button4);
-            this.panel1.Controls.Add(this.guna2Button3);
+            this.panel1.Controls.Add(this.btnLoaiHang);
             this.panel1.Controls.Add(this.btnnhacungcap);
             this.panel1.Controls.Add(this.btnHangHoa);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -127,26 +127,28 @@
             this.guna2Button4.TabIndex = 5;
             this.guna2Button4.Text = "Nhập Hàng";
             this.guna2Button4.UseTransparentBackground = true;
+            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
-            // guna2Button3
+            // btnLoaiHang
             // 
-            this.guna2Button3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button3.BorderRadius = 20;
-            this.guna2Button3.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button3.CheckedState.FillColor = System.Drawing.Color.White;
-            this.guna2Button3.CheckedState.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
-            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Location = new System.Drawing.Point(12, 264);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button3.TabIndex = 4;
-            this.guna2Button3.Text = "Loại Hàng";
-            this.guna2Button3.UseTransparentBackground = true;
+            this.btnLoaiHang.BackColor = System.Drawing.Color.Transparent;
+            this.btnLoaiHang.BorderRadius = 20;
+            this.btnLoaiHang.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnLoaiHang.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnLoaiHang.CheckedState.ForeColor = System.Drawing.Color.Black;
+            this.btnLoaiHang.CheckedState.Parent = this.btnLoaiHang;
+            this.btnLoaiHang.CustomImages.Parent = this.btnLoaiHang;
+            this.btnLoaiHang.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnLoaiHang.ForeColor = System.Drawing.Color.White;
+            this.btnLoaiHang.HoverState.Parent = this.btnLoaiHang;
+            this.btnLoaiHang.Location = new System.Drawing.Point(12, 264);
+            this.btnLoaiHang.Name = "btnLoaiHang";
+            this.btnLoaiHang.ShadowDecoration.Parent = this.btnLoaiHang;
+            this.btnLoaiHang.Size = new System.Drawing.Size(180, 45);
+            this.btnLoaiHang.TabIndex = 4;
+            this.btnLoaiHang.Text = "Loại Hàng";
+            this.btnLoaiHang.UseTransparentBackground = true;
+            this.btnLoaiHang.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // btnnhacungcap
             // 
@@ -236,7 +238,7 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button btnLoaiHang;
         private Guna.UI2.WinForms.Guna2Button btnnhacungcap;
         private Guna.UI2.WinForms.Guna2Button btnHangHoa;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;

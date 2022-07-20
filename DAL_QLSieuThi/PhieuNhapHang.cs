@@ -14,6 +14,18 @@ namespace DAL_QLSieuThi
     
     public partial class PhieuNhapHang
     {
+        public PhieuNhapHang()
+        {
+        }
+
+        public PhieuNhapHang(string soPhieu, string maNV, DateTime ngayTao, string nhaCungCap)
+        {
+            SoPhieu = soPhieu;
+            MaNV = maNV;
+            NgayTao = ngayTao;
+            NhaCungCap = nhaCungCap;
+        }
+
         public string SoPhieu { get; set; }
         public string MaNV { get; set; }
         public System.DateTime NgayTao { get; set; }

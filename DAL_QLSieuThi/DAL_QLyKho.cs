@@ -191,16 +191,39 @@ namespace DAL_QLSieuThi
             return lstnh;
         }
         //-----------------------------------------nhóm hàng end------------------------------------------------//
-        //-----------------------------------------nha cung cap------------------------------------------------//
+        
+        //-----------------------------------------phieuNhap------------------------------------------------//
 
         //them 
+        public Boolean KHO_LuuPhieuNhap(PhieuNhapHang phieunhap)
+        {
+            try
+            {
+                db.PhieuNhapHang.Add(phieunhap);
+                db.SaveChanges();
+                return true;
+            }
+            catch { }
+            return false;
+        }
         //xoa
         //sua
 
-        //-----------------------------------------nha cung cap end------------------------------------------------//
-        //-----------------------------------------nha cung cap------------------------------------------------//
+        //-----------------------------------------phieuNhap end------------------------------------------------//
+        //-----------------------------------------phieuNhapct------------------------------------------------//
 
         //them 
+        public Boolean KHO_LuuPhieuNhapCT(PhieuNhapHangCT phieunhapct)
+        {
+            try
+            {
+                db.PhieuNhapHangCT.Add(phieunhapct);
+                db.SaveChanges();
+                return true;
+            }
+            catch { }
+            return false;
+        }
         //xoa
         //sua
 
