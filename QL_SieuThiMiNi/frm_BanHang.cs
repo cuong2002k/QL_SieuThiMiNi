@@ -171,7 +171,9 @@ namespace QL_SieuThiMiNi
                 foreach (DataGridViewRow i in dtgvHangHoaBan.Rows)
                 {
                     if (i.Cells[1].Value == null) break;
-                    string mahh = i.Cells[1].Value.ToString();
+                    string mavach = i.Cells[1].Value.ToString();
+                    HangHoa hh = db.HangHoa.Where(p => p.MaVach == mavach).SingleOrDefault();
+                    string mahh = hh.MaHH;
                     int sl = int.Parse(i.Cells[3].Value.ToString());
                     int dongia = int.Parse(i.Cells[4].Value.ToString());
                     int thanhtien = sl * dongia;

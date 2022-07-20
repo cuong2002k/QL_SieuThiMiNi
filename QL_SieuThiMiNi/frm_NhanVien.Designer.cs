@@ -28,8 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_NhanVien));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.btnthem = new System.Windows.Forms.ToolStripButton();
+            this.btnsua = new System.Windows.Forms.ToolStripButton();
+            this.btnxoa = new System.Windows.Forms.ToolStripButton();
+            this.btnlammoi = new System.Windows.Forms.ToolStripButton();
+            this.btnthongke = new System.Windows.Forms.ToolStripButton();
+            this.btnthoat = new System.Windows.Forms.ToolStripButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.gunaLabel14 = new Guna.UI.WinForms.GunaLabel();
+            this.txtLuong = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cboQuyen = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.gunaLabel13 = new Guna.UI.WinForms.GunaLabel();
+            this.txtNgaySinh = new Guna.UI2.WinForms.Guna2TextBox();
+            this.gunaLabel10 = new Guna.UI.WinForms.GunaLabel();
+            this.txtTrangThai = new Guna.UI2.WinForms.Guna2TextBox();
+            this.gunaLabel11 = new Guna.UI.WinForms.GunaLabel();
+            this.txtNgayKT = new Guna.UI2.WinForms.Guna2TextBox();
+            this.gunaLabel12 = new Guna.UI.WinForms.GunaLabel();
+            this.txtNgayBD = new Guna.UI2.WinForms.Guna2TextBox();
+            this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
             this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel9 = new Guna.UI.WinForms.GunaLabel();
@@ -45,27 +64,9 @@
             this.txtTenNV = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.txtMaNV = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cboGioiTinh = new Guna.UI2.WinForms.Guna2ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dtgvNhanVien = new System.Windows.Forms.DataGridView();
-            this.btnthem = new System.Windows.Forms.ToolStripButton();
-            this.btnsua = new System.Windows.Forms.ToolStripButton();
-            this.btnxoa = new System.Windows.Forms.ToolStripButton();
-            this.btnlammoi = new System.Windows.Forms.ToolStripButton();
-            this.btnthongke = new System.Windows.Forms.ToolStripButton();
-            this.btnthoat = new System.Windows.Forms.ToolStripButton();
-            this.cboQuyen = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
-            this.cboGioiTinh = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.txtNgayBD = new Guna.UI2.WinForms.Guna2TextBox();
-            this.gunaLabel12 = new Guna.UI.WinForms.GunaLabel();
-            this.txtNgayKT = new Guna.UI2.WinForms.Guna2TextBox();
-            this.gunaLabel11 = new Guna.UI.WinForms.GunaLabel();
-            this.txtTrangThai = new Guna.UI2.WinForms.Guna2TextBox();
-            this.gunaLabel10 = new Guna.UI.WinForms.GunaLabel();
-            this.txtNgaySinh = new Guna.UI2.WinForms.Guna2TextBox();
-            this.gunaLabel13 = new Guna.UI.WinForms.GunaLabel();
-            this.txtLuong = new Guna.UI2.WinForms.Guna2TextBox();
-            this.gunaLabel14 = new Guna.UI.WinForms.GunaLabel();
             this.toolStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -86,6 +87,71 @@
             this.toolStrip1.Size = new System.Drawing.Size(1074, 54);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // btnthem
+            // 
+            this.btnthem.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_add_32;
+            this.btnthem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnthem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnthem.Name = "btnthem";
+            this.btnthem.Size = new System.Drawing.Size(41, 51);
+            this.btnthem.Text = "Thêm";
+            this.btnthem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
+            // 
+            // btnsua
+            // 
+            this.btnsua.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_available_updates_32;
+            this.btnsua.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnsua.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnsua.Name = "btnsua";
+            this.btnsua.Size = new System.Drawing.Size(36, 51);
+            this.btnsua.Text = "Sửa";
+            this.btnsua.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnsua.Click += new System.EventHandler(this.btnsua_Click);
+            // 
+            // btnxoa
+            // 
+            this.btnxoa.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_close_32;
+            this.btnxoa.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnxoa.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnxoa.Name = "btnxoa";
+            this.btnxoa.Size = new System.Drawing.Size(36, 51);
+            this.btnxoa.Text = "Xóa";
+            this.btnxoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
+            // 
+            // btnlammoi
+            // 
+            this.btnlammoi.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_clear_32;
+            this.btnlammoi.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnlammoi.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnlammoi.Name = "btnlammoi";
+            this.btnlammoi.Size = new System.Drawing.Size(58, 51);
+            this.btnlammoi.Text = "Làm Mới";
+            this.btnlammoi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnlammoi.Click += new System.EventHandler(this.btnlammoi_Click);
+            // 
+            // btnthongke
+            // 
+            this.btnthongke.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_report_card_32;
+            this.btnthongke.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnthongke.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnthongke.Name = "btnthongke";
+            this.btnthongke.Size = new System.Drawing.Size(60, 51);
+            this.btnthongke.Text = "Thống kê";
+            this.btnthongke.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // btnthoat
+            // 
+            this.btnthoat.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_sign_out_32;
+            this.btnthoat.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnthoat.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnthoat.Name = "btnthoat";
+            this.btnthoat.Size = new System.Drawing.Size(41, 51);
+            this.btnthoat.Text = "Thoát";
+            this.btnthoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
             // 
             // panel2
             // 
@@ -122,6 +188,213 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1074, 214);
             this.panel2.TabIndex = 3;
+            // 
+            // gunaLabel14
+            // 
+            this.gunaLabel14.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gunaLabel14.AutoSize = true;
+            this.gunaLabel14.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel14.Location = new System.Drawing.Point(280, 173);
+            this.gunaLabel14.Name = "gunaLabel14";
+            this.gunaLabel14.Size = new System.Drawing.Size(41, 15);
+            this.gunaLabel14.TabIndex = 28;
+            this.gunaLabel14.Text = "Luong";
+            // 
+            // txtLuong
+            // 
+            this.txtLuong.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtLuong.BorderRadius = 20;
+            this.txtLuong.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtLuong.DefaultText = "";
+            this.txtLuong.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtLuong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtLuong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtLuong.DisabledState.Parent = this.txtLuong;
+            this.txtLuong.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtLuong.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtLuong.FocusedState.Parent = this.txtLuong;
+            this.txtLuong.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtLuong.HoverState.Parent = this.txtLuong;
+            this.txtLuong.Location = new System.Drawing.Point(331, 163);
+            this.txtLuong.Name = "txtLuong";
+            this.txtLuong.PasswordChar = '\0';
+            this.txtLuong.PlaceholderText = "";
+            this.txtLuong.SelectedText = "";
+            this.txtLuong.ShadowDecoration.Parent = this.txtLuong;
+            this.txtLuong.Size = new System.Drawing.Size(200, 36);
+            this.txtLuong.TabIndex = 27;
+            // 
+            // cboQuyen
+            // 
+            this.cboQuyen.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cboQuyen.BackColor = System.Drawing.Color.Transparent;
+            this.cboQuyen.BorderRadius = 20;
+            this.cboQuyen.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboQuyen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboQuyen.FocusedColor = System.Drawing.Color.Empty;
+            this.cboQuyen.FocusedState.Parent = this.cboQuyen;
+            this.cboQuyen.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cboQuyen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cboQuyen.FormattingEnabled = true;
+            this.cboQuyen.HoverState.Parent = this.cboQuyen;
+            this.cboQuyen.ItemHeight = 30;
+            this.cboQuyen.ItemsAppearance.Parent = this.cboQuyen;
+            this.cboQuyen.Location = new System.Drawing.Point(587, 119);
+            this.cboQuyen.Name = "cboQuyen";
+            this.cboQuyen.ShadowDecoration.Parent = this.cboQuyen;
+            this.cboQuyen.Size = new System.Drawing.Size(200, 36);
+            this.cboQuyen.TabIndex = 26;
+            // 
+            // gunaLabel13
+            // 
+            this.gunaLabel13.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gunaLabel13.AutoSize = true;
+            this.gunaLabel13.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel13.Location = new System.Drawing.Point(14, 173);
+            this.gunaLabel13.Name = "gunaLabel13";
+            this.gunaLabel13.Size = new System.Drawing.Size(58, 15);
+            this.gunaLabel13.TabIndex = 25;
+            this.gunaLabel13.Text = "NgaySinh";
+            // 
+            // txtNgaySinh
+            // 
+            this.txtNgaySinh.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtNgaySinh.BorderRadius = 20;
+            this.txtNgaySinh.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNgaySinh.DefaultText = "";
+            this.txtNgaySinh.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNgaySinh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNgaySinh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNgaySinh.DisabledState.Parent = this.txtNgaySinh;
+            this.txtNgaySinh.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNgaySinh.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNgaySinh.FocusedState.Parent = this.txtNgaySinh;
+            this.txtNgaySinh.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNgaySinh.HoverState.Parent = this.txtNgaySinh;
+            this.txtNgaySinh.Location = new System.Drawing.Point(71, 163);
+            this.txtNgaySinh.Name = "txtNgaySinh";
+            this.txtNgaySinh.PasswordChar = '\0';
+            this.txtNgaySinh.PlaceholderText = "";
+            this.txtNgaySinh.SelectedText = "";
+            this.txtNgaySinh.ShadowDecoration.Parent = this.txtNgaySinh;
+            this.txtNgaySinh.Size = new System.Drawing.Size(200, 36);
+            this.txtNgaySinh.TabIndex = 24;
+            // 
+            // gunaLabel10
+            // 
+            this.gunaLabel10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gunaLabel10.AutoSize = true;
+            this.gunaLabel10.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel10.Location = new System.Drawing.Point(794, 130);
+            this.gunaLabel10.Name = "gunaLabel10";
+            this.gunaLabel10.Size = new System.Drawing.Size(58, 15);
+            this.gunaLabel10.TabIndex = 23;
+            this.gunaLabel10.Text = "TrangThai";
+            // 
+            // txtTrangThai
+            // 
+            this.txtTrangThai.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtTrangThai.BorderRadius = 20;
+            this.txtTrangThai.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTrangThai.DefaultText = "";
+            this.txtTrangThai.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTrangThai.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTrangThai.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTrangThai.DisabledState.Parent = this.txtTrangThai;
+            this.txtTrangThai.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTrangThai.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTrangThai.FocusedState.Parent = this.txtTrangThai;
+            this.txtTrangThai.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTrangThai.HoverState.Parent = this.txtTrangThai;
+            this.txtTrangThai.Location = new System.Drawing.Point(847, 120);
+            this.txtTrangThai.Name = "txtTrangThai";
+            this.txtTrangThai.PasswordChar = '\0';
+            this.txtTrangThai.PlaceholderText = "";
+            this.txtTrangThai.SelectedText = "";
+            this.txtTrangThai.ShadowDecoration.Parent = this.txtTrangThai;
+            this.txtTrangThai.Size = new System.Drawing.Size(200, 36);
+            this.txtTrangThai.TabIndex = 22;
+            // 
+            // gunaLabel11
+            // 
+            this.gunaLabel11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gunaLabel11.AutoSize = true;
+            this.gunaLabel11.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel11.Location = new System.Drawing.Point(794, 88);
+            this.gunaLabel11.Name = "gunaLabel11";
+            this.gunaLabel11.Size = new System.Drawing.Size(50, 15);
+            this.gunaLabel11.TabIndex = 21;
+            this.gunaLabel11.Text = "NgayKD";
+            // 
+            // txtNgayKT
+            // 
+            this.txtNgayKT.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtNgayKT.BorderRadius = 20;
+            this.txtNgayKT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNgayKT.DefaultText = "";
+            this.txtNgayKT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNgayKT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNgayKT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNgayKT.DisabledState.Parent = this.txtNgayKT;
+            this.txtNgayKT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNgayKT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNgayKT.FocusedState.Parent = this.txtNgayKT;
+            this.txtNgayKT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNgayKT.HoverState.Parent = this.txtNgayKT;
+            this.txtNgayKT.Location = new System.Drawing.Point(847, 78);
+            this.txtNgayKT.Name = "txtNgayKT";
+            this.txtNgayKT.PasswordChar = '\0';
+            this.txtNgayKT.PlaceholderText = "";
+            this.txtNgayKT.SelectedText = "";
+            this.txtNgayKT.ShadowDecoration.Parent = this.txtNgayKT;
+            this.txtNgayKT.Size = new System.Drawing.Size(200, 36);
+            this.txtNgayKT.TabIndex = 20;
+            // 
+            // gunaLabel12
+            // 
+            this.gunaLabel12.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gunaLabel12.AutoSize = true;
+            this.gunaLabel12.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel12.Location = new System.Drawing.Point(794, 46);
+            this.gunaLabel12.Name = "gunaLabel12";
+            this.gunaLabel12.Size = new System.Drawing.Size(50, 15);
+            this.gunaLabel12.TabIndex = 19;
+            this.gunaLabel12.Text = "NgayBD";
+            // 
+            // txtNgayBD
+            // 
+            this.txtNgayBD.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtNgayBD.BorderRadius = 20;
+            this.txtNgayBD.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNgayBD.DefaultText = "";
+            this.txtNgayBD.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNgayBD.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNgayBD.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNgayBD.DisabledState.Parent = this.txtNgayBD;
+            this.txtNgayBD.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNgayBD.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNgayBD.FocusedState.Parent = this.txtNgayBD;
+            this.txtNgayBD.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNgayBD.HoverState.Parent = this.txtNgayBD;
+            this.txtNgayBD.Location = new System.Drawing.Point(847, 36);
+            this.txtNgayBD.Name = "txtNgayBD";
+            this.txtNgayBD.PasswordChar = '\0';
+            this.txtNgayBD.PlaceholderText = "";
+            this.txtNgayBD.SelectedText = "";
+            this.txtNgayBD.ShadowDecoration.Parent = this.txtNgayBD;
+            this.txtNgayBD.Size = new System.Drawing.Size(200, 36);
+            this.txtNgayBD.TabIndex = 18;
+            // 
+            // gunaLabel7
+            // 
+            this.gunaLabel7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gunaLabel7.AutoSize = true;
+            this.gunaLabel7.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel7.Location = new System.Drawing.Point(539, 130);
+            this.gunaLabel7.Name = "gunaLabel7";
+            this.gunaLabel7.Size = new System.Drawing.Size(42, 15);
+            this.gunaLabel7.TabIndex = 17;
+            this.gunaLabel7.Text = "Quyen";
             // 
             // txtPassword
             // 
@@ -379,6 +652,27 @@
             this.txtMaNV.Size = new System.Drawing.Size(200, 36);
             this.txtMaNV.TabIndex = 1;
             // 
+            // cboGioiTinh
+            // 
+            this.cboGioiTinh.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cboGioiTinh.BackColor = System.Drawing.Color.Transparent;
+            this.cboGioiTinh.BorderRadius = 20;
+            this.cboGioiTinh.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboGioiTinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboGioiTinh.FocusedColor = System.Drawing.Color.Empty;
+            this.cboGioiTinh.FocusedState.Parent = this.cboGioiTinh;
+            this.cboGioiTinh.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cboGioiTinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cboGioiTinh.FormattingEnabled = true;
+            this.cboGioiTinh.HoverState.Parent = this.cboGioiTinh;
+            this.cboGioiTinh.ItemHeight = 30;
+            this.cboGioiTinh.ItemsAppearance.Parent = this.cboGioiTinh;
+            this.cboGioiTinh.Location = new System.Drawing.Point(71, 119);
+            this.cboGioiTinh.Name = "cboGioiTinh";
+            this.cboGioiTinh.ShadowDecoration.Parent = this.cboGioiTinh;
+            this.cboGioiTinh.Size = new System.Drawing.Size(200, 36);
+            this.cboGioiTinh.TabIndex = 0;
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dtgvNhanVien);
@@ -402,299 +696,6 @@
             this.dtgvNhanVien.TabIndex = 0;
             this.dtgvNhanVien.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dtgvNhanVien_MouseClick);
             // 
-            // btnthem
-            // 
-            this.btnthem.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_add_32;
-            this.btnthem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnthem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnthem.Name = "btnthem";
-            this.btnthem.Size = new System.Drawing.Size(41, 51);
-            this.btnthem.Text = "Thêm";
-            this.btnthem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
-            // 
-            // btnsua
-            // 
-            this.btnsua.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_available_updates_32;
-            this.btnsua.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnsua.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnsua.Name = "btnsua";
-            this.btnsua.Size = new System.Drawing.Size(36, 51);
-            this.btnsua.Text = "Sửa";
-            this.btnsua.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnsua.Click += new System.EventHandler(this.btnsua_Click);
-            // 
-            // btnxoa
-            // 
-            this.btnxoa.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_close_32;
-            this.btnxoa.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnxoa.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnxoa.Name = "btnxoa";
-            this.btnxoa.Size = new System.Drawing.Size(36, 51);
-            this.btnxoa.Text = "Xóa";
-            this.btnxoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
-            // 
-            // btnlammoi
-            // 
-            this.btnlammoi.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_clear_32;
-            this.btnlammoi.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnlammoi.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnlammoi.Name = "btnlammoi";
-            this.btnlammoi.Size = new System.Drawing.Size(58, 51);
-            this.btnlammoi.Text = "Làm Mới";
-            this.btnlammoi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnlammoi.Click += new System.EventHandler(this.btnlammoi_Click);
-            // 
-            // btnthongke
-            // 
-            this.btnthongke.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_report_card_32;
-            this.btnthongke.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnthongke.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnthongke.Name = "btnthongke";
-            this.btnthongke.Size = new System.Drawing.Size(60, 51);
-            this.btnthongke.Text = "Thống kê";
-            this.btnthongke.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // btnthoat
-            // 
-            this.btnthoat.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_sign_out_32;
-            this.btnthoat.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnthoat.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnthoat.Name = "btnthoat";
-            this.btnthoat.Size = new System.Drawing.Size(41, 51);
-            this.btnthoat.Text = "Thoát";
-            this.btnthoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
-            // 
-            // cboQuyen
-            // 
-            this.cboQuyen.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cboQuyen.BackColor = System.Drawing.Color.Transparent;
-            this.cboQuyen.BorderRadius = 20;
-            this.cboQuyen.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cboQuyen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboQuyen.FocusedColor = System.Drawing.Color.Empty;
-            this.cboQuyen.FocusedState.Parent = this.cboQuyen;
-            this.cboQuyen.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cboQuyen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cboQuyen.FormattingEnabled = true;
-            this.cboQuyen.HoverState.Parent = this.cboQuyen;
-            this.cboQuyen.ItemHeight = 30;
-            this.cboQuyen.ItemsAppearance.Parent = this.cboQuyen;
-            this.cboQuyen.Location = new System.Drawing.Point(587, 119);
-            this.cboQuyen.Name = "cboQuyen";
-            this.cboQuyen.ShadowDecoration.Parent = this.cboQuyen;
-            this.cboQuyen.Size = new System.Drawing.Size(200, 36);
-            this.cboQuyen.TabIndex = 26;
-            // 
-            // gunaLabel7
-            // 
-            this.gunaLabel7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gunaLabel7.AutoSize = true;
-            this.gunaLabel7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel7.Location = new System.Drawing.Point(539, 130);
-            this.gunaLabel7.Name = "gunaLabel7";
-            this.gunaLabel7.Size = new System.Drawing.Size(42, 15);
-            this.gunaLabel7.TabIndex = 17;
-            this.gunaLabel7.Text = "Quyen";
-            // 
-            // cboGioiTinh
-            // 
-            this.cboGioiTinh.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cboGioiTinh.BackColor = System.Drawing.Color.Transparent;
-            this.cboGioiTinh.BorderRadius = 20;
-            this.cboGioiTinh.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cboGioiTinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboGioiTinh.FocusedColor = System.Drawing.Color.Empty;
-            this.cboGioiTinh.FocusedState.Parent = this.cboGioiTinh;
-            this.cboGioiTinh.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cboGioiTinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cboGioiTinh.FormattingEnabled = true;
-            this.cboGioiTinh.HoverState.Parent = this.cboGioiTinh;
-            this.cboGioiTinh.ItemHeight = 30;
-            this.cboGioiTinh.ItemsAppearance.Parent = this.cboGioiTinh;
-            this.cboGioiTinh.Location = new System.Drawing.Point(71, 119);
-            this.cboGioiTinh.Name = "cboGioiTinh";
-            this.cboGioiTinh.ShadowDecoration.Parent = this.cboGioiTinh;
-            this.cboGioiTinh.Size = new System.Drawing.Size(200, 36);
-            this.cboGioiTinh.TabIndex = 0;
-            // 
-            // txtNgayBD
-            // 
-            this.txtNgayBD.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtNgayBD.BorderRadius = 20;
-            this.txtNgayBD.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNgayBD.DefaultText = "";
-            this.txtNgayBD.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtNgayBD.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtNgayBD.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNgayBD.DisabledState.Parent = this.txtNgayBD;
-            this.txtNgayBD.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNgayBD.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNgayBD.FocusedState.Parent = this.txtNgayBD;
-            this.txtNgayBD.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNgayBD.HoverState.Parent = this.txtNgayBD;
-            this.txtNgayBD.Location = new System.Drawing.Point(847, 36);
-            this.txtNgayBD.Name = "txtNgayBD";
-            this.txtNgayBD.PasswordChar = '\0';
-            this.txtNgayBD.PlaceholderText = "";
-            this.txtNgayBD.SelectedText = "";
-            this.txtNgayBD.ShadowDecoration.Parent = this.txtNgayBD;
-            this.txtNgayBD.Size = new System.Drawing.Size(200, 36);
-            this.txtNgayBD.TabIndex = 18;
-            // 
-            // gunaLabel12
-            // 
-            this.gunaLabel12.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gunaLabel12.AutoSize = true;
-            this.gunaLabel12.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel12.Location = new System.Drawing.Point(794, 46);
-            this.gunaLabel12.Name = "gunaLabel12";
-            this.gunaLabel12.Size = new System.Drawing.Size(50, 15);
-            this.gunaLabel12.TabIndex = 19;
-            this.gunaLabel12.Text = "NgayBD";
-            // 
-            // txtNgayKT
-            // 
-            this.txtNgayKT.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtNgayKT.BorderRadius = 20;
-            this.txtNgayKT.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNgayKT.DefaultText = "";
-            this.txtNgayKT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtNgayKT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtNgayKT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNgayKT.DisabledState.Parent = this.txtNgayKT;
-            this.txtNgayKT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNgayKT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNgayKT.FocusedState.Parent = this.txtNgayKT;
-            this.txtNgayKT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNgayKT.HoverState.Parent = this.txtNgayKT;
-            this.txtNgayKT.Location = new System.Drawing.Point(847, 78);
-            this.txtNgayKT.Name = "txtNgayKT";
-            this.txtNgayKT.PasswordChar = '\0';
-            this.txtNgayKT.PlaceholderText = "";
-            this.txtNgayKT.SelectedText = "";
-            this.txtNgayKT.ShadowDecoration.Parent = this.txtNgayKT;
-            this.txtNgayKT.Size = new System.Drawing.Size(200, 36);
-            this.txtNgayKT.TabIndex = 20;
-            // 
-            // gunaLabel11
-            // 
-            this.gunaLabel11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gunaLabel11.AutoSize = true;
-            this.gunaLabel11.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel11.Location = new System.Drawing.Point(794, 88);
-            this.gunaLabel11.Name = "gunaLabel11";
-            this.gunaLabel11.Size = new System.Drawing.Size(50, 15);
-            this.gunaLabel11.TabIndex = 21;
-            this.gunaLabel11.Text = "NgayKD";
-            // 
-            // txtTrangThai
-            // 
-            this.txtTrangThai.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTrangThai.BorderRadius = 20;
-            this.txtTrangThai.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTrangThai.DefaultText = "";
-            this.txtTrangThai.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtTrangThai.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtTrangThai.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTrangThai.DisabledState.Parent = this.txtTrangThai;
-            this.txtTrangThai.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTrangThai.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTrangThai.FocusedState.Parent = this.txtTrangThai;
-            this.txtTrangThai.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTrangThai.HoverState.Parent = this.txtTrangThai;
-            this.txtTrangThai.Location = new System.Drawing.Point(847, 120);
-            this.txtTrangThai.Name = "txtTrangThai";
-            this.txtTrangThai.PasswordChar = '\0';
-            this.txtTrangThai.PlaceholderText = "";
-            this.txtTrangThai.SelectedText = "";
-            this.txtTrangThai.ShadowDecoration.Parent = this.txtTrangThai;
-            this.txtTrangThai.Size = new System.Drawing.Size(200, 36);
-            this.txtTrangThai.TabIndex = 22;
-            // 
-            // gunaLabel10
-            // 
-            this.gunaLabel10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gunaLabel10.AutoSize = true;
-            this.gunaLabel10.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel10.Location = new System.Drawing.Point(794, 130);
-            this.gunaLabel10.Name = "gunaLabel10";
-            this.gunaLabel10.Size = new System.Drawing.Size(58, 15);
-            this.gunaLabel10.TabIndex = 23;
-            this.gunaLabel10.Text = "TrangThai";
-            // 
-            // txtNgaySinh
-            // 
-            this.txtNgaySinh.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtNgaySinh.BorderRadius = 20;
-            this.txtNgaySinh.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNgaySinh.DefaultText = "";
-            this.txtNgaySinh.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtNgaySinh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtNgaySinh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNgaySinh.DisabledState.Parent = this.txtNgaySinh;
-            this.txtNgaySinh.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNgaySinh.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNgaySinh.FocusedState.Parent = this.txtNgaySinh;
-            this.txtNgaySinh.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNgaySinh.HoverState.Parent = this.txtNgaySinh;
-            this.txtNgaySinh.Location = new System.Drawing.Point(71, 163);
-            this.txtNgaySinh.Name = "txtNgaySinh";
-            this.txtNgaySinh.PasswordChar = '\0';
-            this.txtNgaySinh.PlaceholderText = "";
-            this.txtNgaySinh.SelectedText = "";
-            this.txtNgaySinh.ShadowDecoration.Parent = this.txtNgaySinh;
-            this.txtNgaySinh.Size = new System.Drawing.Size(200, 36);
-            this.txtNgaySinh.TabIndex = 24;
-            // 
-            // gunaLabel13
-            // 
-            this.gunaLabel13.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gunaLabel13.AutoSize = true;
-            this.gunaLabel13.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel13.Location = new System.Drawing.Point(14, 173);
-            this.gunaLabel13.Name = "gunaLabel13";
-            this.gunaLabel13.Size = new System.Drawing.Size(58, 15);
-            this.gunaLabel13.TabIndex = 25;
-            this.gunaLabel13.Text = "NgaySinh";
-            // 
-            // txtLuong
-            // 
-            this.txtLuong.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtLuong.BorderRadius = 20;
-            this.txtLuong.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtLuong.DefaultText = "";
-            this.txtLuong.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtLuong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtLuong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtLuong.DisabledState.Parent = this.txtLuong;
-            this.txtLuong.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtLuong.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLuong.FocusedState.Parent = this.txtLuong;
-            this.txtLuong.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLuong.HoverState.Parent = this.txtLuong;
-            this.txtLuong.Location = new System.Drawing.Point(331, 163);
-            this.txtLuong.Name = "txtLuong";
-            this.txtLuong.PasswordChar = '\0';
-            this.txtLuong.PlaceholderText = "";
-            this.txtLuong.SelectedText = "";
-            this.txtLuong.ShadowDecoration.Parent = this.txtLuong;
-            this.txtLuong.Size = new System.Drawing.Size(200, 36);
-            this.txtLuong.TabIndex = 27;
-            // 
-            // gunaLabel14
-            // 
-            this.gunaLabel14.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gunaLabel14.AutoSize = true;
-            this.gunaLabel14.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel14.Location = new System.Drawing.Point(280, 173);
-            this.gunaLabel14.Name = "gunaLabel14";
-            this.gunaLabel14.Size = new System.Drawing.Size(41, 15);
-            this.gunaLabel14.TabIndex = 28;
-            this.gunaLabel14.Text = "Luong";
-            // 
             // frm_NhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -703,6 +704,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.toolStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_NhanVien";
             this.Text = "Quản Lý Nhân Viên";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

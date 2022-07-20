@@ -40,5 +40,17 @@ namespace QL_SieuThiMiNi
             frm_BanHang banhang = new frm_BanHang();
             banhang.ShowDialog();
         }
+
+        private void btnDoanhThu_Click(object sender, EventArgs e)
+        {
+            frm_DoanhThu doanhthu = new frm_DoanhThu();
+            doanhthu.ShowDialog();
+        }
+
+        private void btnBaoCao_Click(object sender, EventArgs e)
+        {
+            frm_BaoCao frm = new frm_BaoCao();
+            frm.ShowDialog();
+        }
     }
 }

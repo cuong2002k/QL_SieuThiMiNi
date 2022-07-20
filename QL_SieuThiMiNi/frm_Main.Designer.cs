@@ -29,31 +29,32 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnBaoCao = new System.Windows.Forms.Button();
             this.btnkhachhang = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnDoanhThu = new System.Windows.Forms.Button();
             this.btnkho = new System.Windows.Forms.Button();
             this.btnNhanVien = new System.Windows.Forms.Button();
             this.btn_BanHang = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button6
+            // btnBaoCao
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(115)))), ((int)(((byte)(185)))));
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.Black;
-            this.button6.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_accounting_80;
-            this.button6.Location = new System.Drawing.Point(487, 157);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(235, 143);
-            this.button6.TabIndex = 17;
-            this.button6.Text = "Báo cáo";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnBaoCao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(115)))), ((int)(((byte)(185)))));
+            this.btnBaoCao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBaoCao.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnBaoCao.FlatAppearance.BorderSize = 0;
+            this.btnBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBaoCao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBaoCao.ForeColor = System.Drawing.Color.Black;
+            this.btnBaoCao.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_accounting_80;
+            this.btnBaoCao.Location = new System.Drawing.Point(487, 157);
+            this.btnBaoCao.Name = "btnBaoCao";
+            this.btnBaoCao.Size = new System.Drawing.Size(235, 143);
+            this.btnBaoCao.TabIndex = 17;
+            this.btnBaoCao.Text = "Báo cáo";
+            this.btnBaoCao.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnBaoCao.UseVisualStyleBackColor = false;
+            this.btnBaoCao.Click += new System.EventHandler(this.btnBaoCao_Click);
             // 
             // btnkhachhang
             // 
@@ -74,23 +75,24 @@
             this.btnkhachhang.UseVisualStyleBackColor = false;
             this.btnkhachhang.Click += new System.EventHandler(this.btnkhachhang_Click);
             // 
-            // button4
+            // btnDoanhThu
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(171)))), ((int)(((byte)(121)))));
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_increase_80;
-            this.button4.Location = new System.Drawing.Point(246, 157);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(235, 143);
-            this.button4.TabIndex = 15;
-            this.button4.Text = "Doanh Thu";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnDoanhThu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(171)))), ((int)(((byte)(121)))));
+            this.btnDoanhThu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDoanhThu.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnDoanhThu.FlatAppearance.BorderSize = 0;
+            this.btnDoanhThu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDoanhThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDoanhThu.ForeColor = System.Drawing.Color.Black;
+            this.btnDoanhThu.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_increase_80;
+            this.btnDoanhThu.Location = new System.Drawing.Point(246, 157);
+            this.btnDoanhThu.Name = "btnDoanhThu";
+            this.btnDoanhThu.Size = new System.Drawing.Size(235, 143);
+            this.btnDoanhThu.TabIndex = 15;
+            this.btnDoanhThu.Text = "Doanh Thu";
+            this.btnDoanhThu.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnDoanhThu.UseVisualStyleBackColor = false;
+            this.btnDoanhThu.Click += new System.EventHandler(this.btnDoanhThu_Click);
             // 
             // btnkho
             // 
@@ -154,9 +156,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(727, 305);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.btnBaoCao);
             this.Controls.Add(this.btnkhachhang);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btnDoanhThu);
             this.Controls.Add(this.btnkho);
             this.Controls.Add(this.btnNhanVien);
             this.Controls.Add(this.btn_BanHang);
@@ -172,9 +174,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnBaoCao;
         private System.Windows.Forms.Button btnkhachhang;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnDoanhThu;
         private System.Windows.Forms.Button btnkho;
         private System.Windows.Forms.Button btnNhanVien;
         private System.Windows.Forms.Button btn_BanHang;
