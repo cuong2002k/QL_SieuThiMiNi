@@ -30,7 +30,6 @@
         {
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnlapphieu = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.btnluuphieu = new System.Windows.Forms.ToolStripButton();
             this.btnlammoi = new System.Windows.Forms.ToolStripButton();
             this.btnthoat = new System.Windows.Forms.ToolStripButton();
@@ -60,9 +59,9 @@
             // 
             // toolStrip1
             // 
+            this.toolStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(174)))), ((int)(((byte)(197)))));
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnlapphieu,
-            this.toolStripButton1,
             this.btnluuphieu,
             this.btnlammoi,
             this.btnthoat});
@@ -82,17 +81,6 @@
             this.btnlapphieu.Text = "lập Phiếu";
             this.btnlapphieu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnlapphieu.Click += new System.EventHandler(this.btnlapphieu_Click_1);
-            // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_clear_32;
-            this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(91, 51);
-            this.toolStripButton1.Text = "Làm Mới Phiếu";
-            this.toolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // btnluuphieu
             // 
@@ -125,6 +113,7 @@
             this.btnthoat.Size = new System.Drawing.Size(41, 51);
             this.btnthoat.Text = "Thoát";
             this.btnthoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
             // 
             // groupBox1
             // 
@@ -237,6 +226,7 @@
             // 
             // dtgvNhaCungCap
             // 
+            this.dtgvNhaCungCap.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvNhaCungCap.BackgroundColor = System.Drawing.Color.White;
             this.dtgvNhaCungCap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvNhaCungCap.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -288,7 +278,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dtgvNhaCungCap;
         private System.Windows.Forms.DataGridView dtgvHangHoaNhap;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripButton btnluuphieu;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaHH;

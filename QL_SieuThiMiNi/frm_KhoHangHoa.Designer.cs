@@ -75,6 +75,7 @@
             // 
             // toolStrip1
             // 
+            this.toolStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(174)))), ((int)(((byte)(197)))));
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnthem,
             this.btnsua,
@@ -176,6 +177,7 @@
             // 
             // dtgvHangHoa
             // 
+            this.dtgvHangHoa.BackgroundColor = System.Drawing.Color.White;
             this.dtgvHangHoa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvHangHoa.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgvHangHoa.Location = new System.Drawing.Point(3, 16);
@@ -183,10 +185,13 @@
             this.dtgvHangHoa.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgvHangHoa.Size = new System.Drawing.Size(1048, 163);
             this.dtgvHangHoa.TabIndex = 0;
+            this.dtgvHangHoa.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dtgvHangHoa_CellFormatting);
             this.dtgvHangHoa.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtgvHangHoa_CellMouseClick);
+            this.dtgvHangHoa.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dtgvHangHoa_RowPrePaint);
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(174)))), ((int)(((byte)(197)))));
             this.panel2.Controls.Add(this.cboNCC);
             this.panel2.Controls.Add(this.gunaLabel13);
             this.panel2.Controls.Add(this.txtVAT);
@@ -229,7 +234,7 @@
             this.cboNCC.FocusedColor = System.Drawing.Color.Empty;
             this.cboNCC.FocusedState.Parent = this.cboNCC;
             this.cboNCC.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cboNCC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cboNCC.ForeColor = System.Drawing.Color.Black;
             this.cboNCC.FormattingEnabled = true;
             this.cboNCC.HoverState.Parent = this.cboNCC;
             this.cboNCC.ItemHeight = 30;
@@ -264,6 +269,7 @@
             this.txtVAT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtVAT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtVAT.FocusedState.Parent = this.txtVAT;
+            this.txtVAT.ForeColor = System.Drawing.Color.Black;
             this.txtVAT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtVAT.HoverState.Parent = this.txtVAT;
             this.txtVAT.Location = new System.Drawing.Point(61, 163);
@@ -299,6 +305,7 @@
             this.txtTrangThai.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTrangThai.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTrangThai.FocusedState.Parent = this.txtTrangThai;
+            this.txtTrangThai.ForeColor = System.Drawing.Color.Black;
             this.txtTrangThai.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTrangThai.HoverState.Parent = this.txtTrangThai;
             this.txtTrangThai.Location = new System.Drawing.Point(837, 120);
@@ -334,6 +341,7 @@
             this.txtSL.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtSL.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSL.FocusedState.Parent = this.txtSL;
+            this.txtSL.ForeColor = System.Drawing.Color.Black;
             this.txtSL.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSL.HoverState.Parent = this.txtSL;
             this.txtSL.Location = new System.Drawing.Point(837, 78);
@@ -369,6 +377,7 @@
             this.txtDinhMuc.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtDinhMuc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDinhMuc.FocusedState.Parent = this.txtDinhMuc;
+            this.txtDinhMuc.ForeColor = System.Drawing.Color.Black;
             this.txtDinhMuc.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDinhMuc.HoverState.Parent = this.txtDinhMuc;
             this.txtDinhMuc.Location = new System.Drawing.Point(837, 36);
@@ -404,6 +413,7 @@
             this.txtMaVach.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtMaVach.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMaVach.FocusedState.Parent = this.txtMaVach;
+            this.txtMaVach.ForeColor = System.Drawing.Color.Black;
             this.txtMaVach.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMaVach.HoverState.Parent = this.txtMaVach;
             this.txtMaVach.Location = new System.Drawing.Point(577, 120);
@@ -450,6 +460,7 @@
             this.txtDVT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtDVT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDVT.FocusedState.Parent = this.txtDVT;
+            this.txtDVT.ForeColor = System.Drawing.Color.Black;
             this.txtDVT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDVT.HoverState.Parent = this.txtDVT;
             this.txtDVT.Location = new System.Drawing.Point(577, 36);
@@ -485,6 +496,7 @@
             this.txtGiaBan.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtGiaBan.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtGiaBan.FocusedState.Parent = this.txtGiaBan;
+            this.txtGiaBan.ForeColor = System.Drawing.Color.Black;
             this.txtGiaBan.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtGiaBan.HoverState.Parent = this.txtGiaBan;
             this.txtGiaBan.Location = new System.Drawing.Point(321, 119);
@@ -520,6 +532,7 @@
             this.txtGiaNhap.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtGiaNhap.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtGiaNhap.FocusedState.Parent = this.txtGiaNhap;
+            this.txtGiaNhap.ForeColor = System.Drawing.Color.Black;
             this.txtGiaNhap.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtGiaNhap.HoverState.Parent = this.txtGiaNhap;
             this.txtGiaNhap.Location = new System.Drawing.Point(321, 77);
@@ -555,6 +568,7 @@
             this.txtXuatXu.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtXuatXu.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtXuatXu.FocusedState.Parent = this.txtXuatXu;
+            this.txtXuatXu.ForeColor = System.Drawing.Color.Black;
             this.txtXuatXu.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtXuatXu.HoverState.Parent = this.txtXuatXu;
             this.txtXuatXu.Location = new System.Drawing.Point(321, 35);
@@ -601,6 +615,7 @@
             this.txtTenHH.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTenHH.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTenHH.FocusedState.Parent = this.txtTenHH;
+            this.txtTenHH.ForeColor = System.Drawing.Color.Black;
             this.txtTenHH.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTenHH.HoverState.Parent = this.txtTenHH;
             this.txtTenHH.Location = new System.Drawing.Point(61, 77);
@@ -636,6 +651,7 @@
             this.txtMaHH.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtMaHH.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMaHH.FocusedState.Parent = this.txtMaHH;
+            this.txtMaHH.ForeColor = System.Drawing.Color.Black;
             this.txtMaHH.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMaHH.HoverState.Parent = this.txtMaHH;
             this.txtMaHH.Location = new System.Drawing.Point(61, 35);
@@ -657,7 +673,7 @@
             this.cboNH.FocusedColor = System.Drawing.Color.Empty;
             this.cboNH.FocusedState.Parent = this.cboNH;
             this.cboNH.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cboNH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cboNH.ForeColor = System.Drawing.Color.Black;
             this.cboNH.FormattingEnabled = true;
             this.cboNH.HoverState.Parent = this.cboNH;
             this.cboNH.ItemHeight = 30;

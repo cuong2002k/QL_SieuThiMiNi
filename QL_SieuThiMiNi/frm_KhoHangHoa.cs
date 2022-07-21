@@ -14,6 +14,7 @@ namespace QL_SieuThiMiNi
     public partial class frm_KhoHangHoa : Form
     {
         BUSQLyKho busQLKHO = new BUSQLyKho();
+        SieuThiMiniEntities db = new SieuThiMiniEntities();
         public frm_KhoHangHoa()
         {
             InitializeComponent();
@@ -49,6 +50,14 @@ namespace QL_SieuThiMiNi
         void HienThiHangHoa()
         {
             dtgvHangHoa.DataSource = busQLKHO.KHO_LayDSHH();
+            //910
+            foreach(DataGridViewRow row in dtgvHangHoa.Rows)
+            {
+                if(int.Parse(row.Cells[10].Value.ToString())>= int.Parse(row.Cells[10].Value.ToString()))
+                {
+                    row.DefaultCellStyle.BackColor = Color.Red;
+                }
+            }
             
         }
         private void frm_KhoHangHoa_Load(object sender, EventArgs e)
@@ -57,21 +66,18 @@ namespace QL_SieuThiMiNi
             var dbncc = busQLKHO.KHO_LayDSNCC();
             foreach (var i in dbncc)
             {
-                cboNCC.Items.Add(i.MaNCC);
+                cboNCC.Items.Add(i.TenNCC);
             }
             var dbNH = busQLKHO.KHO_LayDSNH();
             foreach(var i in dbNH)
             {
-                cboNH.Items.Add(i.MaNH);
+                cboNH.Items.Add(i.TenNH);
             }
         }
 
         private void btnthem_Click(object sender, EventArgs e)
         {
-            //txtMaHH.Text == string.Empty || txtTenHH.Text == string.Empty || cboNH.Text == string.Empty ||
-            //cboNCC.Text == string.Empty || txtVAT.Text == string.Empty || txtXuatXu.Text == string.Empty || txtGiaBan.Text == string.Empty ||
-            //txtGiaNhap.Text == string.Empty || txtDVT.Text == string.Empty || txtMaVach.Text == string.Empty || txtDinhMuc.Text == string.Empty ||
-            //txtSL.Text == string.Empty || txtTrangThai.Text == string.Empty)
+          
             if (checktextboxnotnull() == true)
             {
                 var test = busQLKHO.KHO_TimKiemHangHoa(txtMaHH.Text);
@@ -79,7 +85,9 @@ namespace QL_SieuThiMiNi
                 {
                     if (i == null)
                     {
-                        HangHoa hanghoa = new HangHoa(txtMaHH.Text, txtTenHH.Text, cboNH.Text, txtXuatXu.Text, int.Parse(txtGiaNhap.Text), int.Parse(txtGiaBan.Text), txtDVT.Text, cboNCC.Text, txtMaVach.Text, int.Parse(txtDinhMuc.Text), int.Parse(txtSL.Text),txtTrangThai.Text=="True"?true : false, int.Parse(txtVAT.Text));
+                        var nh = db.NhomHang.Where(p => p.TenNH == cboNH.Text).SingleOrDefault();
+                        var ncc = db.NhaCungCap.Where(p => p.TenNCC == cboNCC.Text).SingleOrDefault();
+                        HangHoa hanghoa = new HangHoa(txtMaHH.Text, txtTenHH.Text, nh.MaNH, txtXuatXu.Text, int.Parse(txtGiaNhap.Text), int.Parse(txtGiaBan.Text), txtDVT.Text, ncc.MaNCC, txtMaVach.Text, int.Parse(txtDinhMuc.Text), int.Parse(txtSL.Text),txtTrangThai.Text=="True"?true : false, int.Parse(txtVAT.Text));
                         if (busQLKHO.KHO_ThemHangHoa(hanghoa))
                         {
                             MessageBox.Show("Thêm hàng hóa thành công");
@@ -114,7 +122,9 @@ namespace QL_SieuThiMiNi
                         return;
                     }
                 }
-                HangHoa hanghoa = new HangHoa(txtMaHH.Text, txtTenHH.Text, cboNH.Text, txtXuatXu.Text, int.Parse(txtGiaNhap.Text), int.Parse(txtGiaBan.Text), txtDVT.Text, cboNCC.Text, txtMaVach.Text, int.Parse(txtDinhMuc.Text), int.Parse(txtSL.Text), txtTrangThai.Text == "True" ? true : false, int.Parse(txtVAT.Text));
+                var nh = db.NhomHang.Where(p => p.TenNH == cboNH.Text).SingleOrDefault();
+                var ncc = db.NhaCungCap.Where(p => p.TenNCC == cboNCC.Text).SingleOrDefault();
+                HangHoa hanghoa = new HangHoa(txtMaHH.Text, txtTenHH.Text, nh.MaNH, txtXuatXu.Text, int.Parse(txtGiaNhap.Text), int.Parse(txtGiaBan.Text), txtDVT.Text, ncc.MaNCC, txtMaVach.Text, int.Parse(txtDinhMuc.Text), int.Parse(txtSL.Text), txtTrangThai.Text == "True" ? true : false, int.Parse(txtVAT.Text));
                 if (busQLKHO.KHO_SuaHangHoa(hanghoa))
                 {
                     MessageBox.Show("Sửa Hàng hóa thành công");
@@ -170,12 +180,17 @@ namespace QL_SieuThiMiNi
         {
             txtMaHH.Text = dtgvHangHoa.SelectedRows[0].Cells[0].Value.ToString();
             txtTenHH.Text = dtgvHangHoa.SelectedRows[0].Cells[1].Value.ToString();
-            cboNH.Text = dtgvHangHoa.SelectedRows[0].Cells[2].Value.ToString();
+            string manh = dtgvHangHoa.SelectedRows[0].Cells[2].Value.ToString();
+            var nh = db.NhomHang.Where(p => p.MaNH == manh).SingleOrDefault();
+            cboNH.Text = nh.TenNH;
             txtXuatXu.Text = dtgvHangHoa.SelectedRows[0].Cells[3].Value.ToString();
             txtGiaNhap.Text = dtgvHangHoa.SelectedRows[0].Cells[4].Value.ToString();
             txtGiaBan.Text = dtgvHangHoa.SelectedRows[0].Cells[5].Value.ToString();
             txtDVT.Text = dtgvHangHoa.SelectedRows[0].Cells[6].Value.ToString();
-            cboNCC.Text = dtgvHangHoa.SelectedRows[0].Cells[7].Value.ToString();
+            string mancc = dtgvHangHoa.SelectedRows[0].Cells[7].Value.ToString();
+            var ncc = db.NhaCungCap.Where(p => p.MaNCC == mancc).SingleOrDefault();
+            cboNCC.Text = ncc.TenNCC;
+
             txtMaVach.Text = dtgvHangHoa.SelectedRows[0].Cells[8].Value.ToString();
             txtDinhMuc.Text = dtgvHangHoa.SelectedRows[0].Cells[9].Value.ToString();
             txtSL.Text = dtgvHangHoa.SelectedRows[0].Cells[10].Value.ToString();
@@ -196,6 +211,22 @@ namespace QL_SieuThiMiNi
             frmrpt_HangHoa frm = new frmrpt_HangHoa();
             frm.rptvHangHoa.ReportSource = prthanghoa;
             frm.ShowDialog();
+        }
+
+        private void dtgvHangHoa_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            
+        }
+
+        private void dtgvHangHoa_RowPrePaint(object sender, DataGridViewRowPrePaintEventArgs e)
+        {
+            if(int.Parse(dtgvHangHoa.Rows[e.RowIndex].Cells[10].Value.ToString()) - int.Parse(dtgvHangHoa.Rows[e.RowIndex].Cells[9].Value.ToString()) <= 10){
+                dtgvHangHoa.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.Red;
+            }
+            else
+            {
+                dtgvHangHoa.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.White;
+            }
         }
     }
 }

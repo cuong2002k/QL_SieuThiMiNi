@@ -84,7 +84,7 @@
             this.btnthoat});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1074, 54);
+            this.toolStrip1.Size = new System.Drawing.Size(1181, 54);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -186,7 +186,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 54);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1074, 214);
+            this.panel2.Size = new System.Drawing.Size(1181, 214);
             this.panel2.TabIndex = 3;
             // 
             // gunaLabel14
@@ -194,7 +194,7 @@
             this.gunaLabel14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaLabel14.AutoSize = true;
             this.gunaLabel14.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel14.Location = new System.Drawing.Point(280, 173);
+            this.gunaLabel14.Location = new System.Drawing.Point(333, 173);
             this.gunaLabel14.Name = "gunaLabel14";
             this.gunaLabel14.Size = new System.Drawing.Size(41, 15);
             this.gunaLabel14.TabIndex = 28;
@@ -215,7 +215,7 @@
             this.txtLuong.FocusedState.Parent = this.txtLuong;
             this.txtLuong.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtLuong.HoverState.Parent = this.txtLuong;
-            this.txtLuong.Location = new System.Drawing.Point(331, 163);
+            this.txtLuong.Location = new System.Drawing.Point(384, 163);
             this.txtLuong.Name = "txtLuong";
             this.txtLuong.PasswordChar = '\0';
             this.txtLuong.PlaceholderText = "";
@@ -239,7 +239,7 @@
             this.cboQuyen.HoverState.Parent = this.cboQuyen;
             this.cboQuyen.ItemHeight = 30;
             this.cboQuyen.ItemsAppearance.Parent = this.cboQuyen;
-            this.cboQuyen.Location = new System.Drawing.Point(587, 119);
+            this.cboQuyen.Location = new System.Drawing.Point(640, 119);
             this.cboQuyen.Name = "cboQuyen";
             this.cboQuyen.ShadowDecoration.Parent = this.cboQuyen;
             this.cboQuyen.Size = new System.Drawing.Size(200, 36);
@@ -250,7 +250,7 @@
             this.gunaLabel13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaLabel13.AutoSize = true;
             this.gunaLabel13.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel13.Location = new System.Drawing.Point(14, 173);
+            this.gunaLabel13.Location = new System.Drawing.Point(67, 173);
             this.gunaLabel13.Name = "gunaLabel13";
             this.gunaLabel13.Size = new System.Drawing.Size(58, 15);
             this.gunaLabel13.TabIndex = 25;
@@ -271,7 +271,7 @@
             this.txtNgaySinh.FocusedState.Parent = this.txtNgaySinh;
             this.txtNgaySinh.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNgaySinh.HoverState.Parent = this.txtNgaySinh;
-            this.txtNgaySinh.Location = new System.Drawing.Point(71, 163);
+            this.txtNgaySinh.Location = new System.Drawing.Point(124, 163);
             this.txtNgaySinh.Name = "txtNgaySinh";
             this.txtNgaySinh.PasswordChar = '\0';
             this.txtNgaySinh.PlaceholderText = "";
@@ -285,7 +285,7 @@
             this.gunaLabel10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaLabel10.AutoSize = true;
             this.gunaLabel10.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel10.Location = new System.Drawing.Point(794, 130);
+            this.gunaLabel10.Location = new System.Drawing.Point(847, 130);
             this.gunaLabel10.Name = "gunaLabel10";
             this.gunaLabel10.Size = new System.Drawing.Size(58, 15);
             this.gunaLabel10.TabIndex = 23;
@@ -306,7 +306,7 @@
             this.txtTrangThai.FocusedState.Parent = this.txtTrangThai;
             this.txtTrangThai.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTrangThai.HoverState.Parent = this.txtTrangThai;
-            this.txtTrangThai.Location = new System.Drawing.Point(847, 120);
+            this.txtTrangThai.Location = new System.Drawing.Point(900, 120);
             this.txtTrangThai.Name = "txtTrangThai";
             this.txtTrangThai.PasswordChar = '\0';
             this.txtTrangThai.PlaceholderText = "";
@@ -320,7 +320,7 @@
             this.gunaLabel11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaLabel11.AutoSize = true;
             this.gunaLabel11.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel11.Location = new System.Drawing.Point(794, 88);
+            this.gunaLabel11.Location = new System.Drawing.Point(847, 88);
             this.gunaLabel11.Name = "gunaLabel11";
             this.gunaLabel11.Size = new System.Drawing.Size(50, 15);
             this.gunaLabel11.TabIndex = 21;
@@ -341,7 +341,7 @@
             this.txtNgayKT.FocusedState.Parent = this.txtNgayKT;
             this.txtNgayKT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNgayKT.HoverState.Parent = this.txtNgayKT;
-            this.txtNgayKT.Location = new System.Drawing.Point(847, 78);
+            this.txtNgayKT.Location = new System.Drawing.Point(900, 78);
             this.txtNgayKT.Name = "txtNgayKT";
             this.txtNgayKT.PasswordChar = '\0';
             this.txtNgayKT.PlaceholderText = "";
@@ -355,7 +355,7 @@
             this.gunaLabel12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaLabel12.AutoSize = true;
             this.gunaLabel12.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel12.Location = new System.Drawing.Point(794, 46);
+            this.gunaLabel12.Location = new System.Drawing.Point(847, 46);
             this.gunaLabel12.Name = "gunaLabel12";
             this.gunaLabel12.Size = new System.Drawing.Size(50, 15);
             this.gunaLabel12.TabIndex = 19;
@@ -376,7 +376,7 @@
             this.txtNgayBD.FocusedState.Parent = this.txtNgayBD;
             this.txtNgayBD.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNgayBD.HoverState.Parent = this.txtNgayBD;
-            this.txtNgayBD.Location = new System.Drawing.Point(847, 36);
+            this.txtNgayBD.Location = new System.Drawing.Point(900, 36);
             this.txtNgayBD.Name = "txtNgayBD";
             this.txtNgayBD.PasswordChar = '\0';
             this.txtNgayBD.PlaceholderText = "";
@@ -390,7 +390,7 @@
             this.gunaLabel7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaLabel7.AutoSize = true;
             this.gunaLabel7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel7.Location = new System.Drawing.Point(539, 130);
+            this.gunaLabel7.Location = new System.Drawing.Point(592, 130);
             this.gunaLabel7.Name = "gunaLabel7";
             this.gunaLabel7.Size = new System.Drawing.Size(42, 15);
             this.gunaLabel7.TabIndex = 17;
@@ -411,7 +411,7 @@
             this.txtPassword.FocusedState.Parent = this.txtPassword;
             this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPassword.HoverState.Parent = this.txtPassword;
-            this.txtPassword.Location = new System.Drawing.Point(587, 78);
+            this.txtPassword.Location = new System.Drawing.Point(640, 78);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '\0';
             this.txtPassword.PlaceholderText = "";
@@ -425,7 +425,7 @@
             this.gunaLabel8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaLabel8.AutoSize = true;
             this.gunaLabel8.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel8.Location = new System.Drawing.Point(528, 88);
+            this.gunaLabel8.Location = new System.Drawing.Point(581, 88);
             this.gunaLabel8.Name = "gunaLabel8";
             this.gunaLabel8.Size = new System.Drawing.Size(57, 15);
             this.gunaLabel8.TabIndex = 15;
@@ -436,7 +436,7 @@
             this.gunaLabel9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaLabel9.AutoSize = true;
             this.gunaLabel9.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel9.Location = new System.Drawing.Point(528, 46);
+            this.gunaLabel9.Location = new System.Drawing.Point(581, 46);
             this.gunaLabel9.Name = "gunaLabel9";
             this.gunaLabel9.Size = new System.Drawing.Size(60, 15);
             this.gunaLabel9.TabIndex = 13;
@@ -457,7 +457,7 @@
             this.txtUserName.FocusedState.Parent = this.txtUserName;
             this.txtUserName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUserName.HoverState.Parent = this.txtUserName;
-            this.txtUserName.Location = new System.Drawing.Point(587, 36);
+            this.txtUserName.Location = new System.Drawing.Point(640, 36);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.PasswordChar = '\0';
             this.txtUserName.PlaceholderText = "";
@@ -471,7 +471,7 @@
             this.gunaLabel6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaLabel6.AutoSize = true;
             this.gunaLabel6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel6.Location = new System.Drawing.Point(283, 129);
+            this.gunaLabel6.Location = new System.Drawing.Point(336, 129);
             this.gunaLabel6.Name = "gunaLabel6";
             this.gunaLabel6.Size = new System.Drawing.Size(36, 15);
             this.gunaLabel6.TabIndex = 11;
@@ -492,7 +492,7 @@
             this.txtEmail.FocusedState.Parent = this.txtEmail;
             this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmail.HoverState.Parent = this.txtEmail;
-            this.txtEmail.Location = new System.Drawing.Point(331, 119);
+            this.txtEmail.Location = new System.Drawing.Point(384, 119);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PasswordChar = '\0';
             this.txtEmail.PlaceholderText = "";
@@ -506,7 +506,7 @@
             this.gunaLabel5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaLabel5.AutoSize = true;
             this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel5.Location = new System.Drawing.Point(283, 87);
+            this.gunaLabel5.Location = new System.Drawing.Point(336, 87);
             this.gunaLabel5.Name = "gunaLabel5";
             this.gunaLabel5.Size = new System.Drawing.Size(42, 15);
             this.gunaLabel5.TabIndex = 9;
@@ -527,7 +527,7 @@
             this.txtDiaChi.FocusedState.Parent = this.txtDiaChi;
             this.txtDiaChi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDiaChi.HoverState.Parent = this.txtDiaChi;
-            this.txtDiaChi.Location = new System.Drawing.Point(331, 77);
+            this.txtDiaChi.Location = new System.Drawing.Point(384, 77);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.PasswordChar = '\0';
             this.txtDiaChi.PlaceholderText = "";
@@ -541,7 +541,7 @@
             this.gunaLabel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel4.Location = new System.Drawing.Point(283, 45);
+            this.gunaLabel4.Location = new System.Drawing.Point(336, 45);
             this.gunaLabel4.Name = "gunaLabel4";
             this.gunaLabel4.Size = new System.Drawing.Size(26, 15);
             this.gunaLabel4.TabIndex = 7;
@@ -562,7 +562,7 @@
             this.txtSDT.FocusedState.Parent = this.txtSDT;
             this.txtSDT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSDT.HoverState.Parent = this.txtSDT;
-            this.txtSDT.Location = new System.Drawing.Point(331, 35);
+            this.txtSDT.Location = new System.Drawing.Point(384, 35);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.PasswordChar = '\0';
             this.txtSDT.PlaceholderText = "";
@@ -576,7 +576,7 @@
             this.gunaLabel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel3.Location = new System.Drawing.Point(23, 130);
+            this.gunaLabel3.Location = new System.Drawing.Point(76, 130);
             this.gunaLabel3.Name = "gunaLabel3";
             this.gunaLabel3.Size = new System.Drawing.Size(51, 15);
             this.gunaLabel3.TabIndex = 5;
@@ -587,7 +587,7 @@
             this.gunaLabel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel2.Location = new System.Drawing.Point(23, 87);
+            this.gunaLabel2.Location = new System.Drawing.Point(76, 87);
             this.gunaLabel2.Name = "gunaLabel2";
             this.gunaLabel2.Size = new System.Drawing.Size(41, 15);
             this.gunaLabel2.TabIndex = 4;
@@ -608,7 +608,7 @@
             this.txtTenNV.FocusedState.Parent = this.txtTenNV;
             this.txtTenNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTenNV.HoverState.Parent = this.txtTenNV;
-            this.txtTenNV.Location = new System.Drawing.Point(71, 77);
+            this.txtTenNV.Location = new System.Drawing.Point(124, 77);
             this.txtTenNV.Name = "txtTenNV";
             this.txtTenNV.PasswordChar = '\0';
             this.txtTenNV.PlaceholderText = "";
@@ -622,7 +622,7 @@
             this.gunaLabel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel1.Location = new System.Drawing.Point(23, 45);
+            this.gunaLabel1.Location = new System.Drawing.Point(76, 45);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(40, 15);
             this.gunaLabel1.TabIndex = 2;
@@ -643,7 +643,7 @@
             this.txtMaNV.FocusedState.Parent = this.txtMaNV;
             this.txtMaNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMaNV.HoverState.Parent = this.txtMaNV;
-            this.txtMaNV.Location = new System.Drawing.Point(71, 35);
+            this.txtMaNV.Location = new System.Drawing.Point(124, 35);
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.PasswordChar = '\0';
             this.txtMaNV.PlaceholderText = "";
@@ -667,7 +667,7 @@
             this.cboGioiTinh.HoverState.Parent = this.cboGioiTinh;
             this.cboGioiTinh.ItemHeight = 30;
             this.cboGioiTinh.ItemsAppearance.Parent = this.cboGioiTinh;
-            this.cboGioiTinh.Location = new System.Drawing.Point(71, 119);
+            this.cboGioiTinh.Location = new System.Drawing.Point(124, 119);
             this.cboGioiTinh.Name = "cboGioiTinh";
             this.cboGioiTinh.ShadowDecoration.Parent = this.cboGioiTinh;
             this.cboGioiTinh.Size = new System.Drawing.Size(200, 36);
@@ -679,7 +679,7 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 268);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1074, 182);
+            this.groupBox1.Size = new System.Drawing.Size(1181, 182);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh Sách Nhân Viên";
@@ -687,12 +687,13 @@
             // dtgvNhanVien
             // 
             this.dtgvNhanVien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvNhanVien.BackgroundColor = System.Drawing.Color.White;
             this.dtgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgvNhanVien.Location = new System.Drawing.Point(3, 16);
             this.dtgvNhanVien.Name = "dtgvNhanVien";
             this.dtgvNhanVien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgvNhanVien.Size = new System.Drawing.Size(1068, 163);
+            this.dtgvNhanVien.Size = new System.Drawing.Size(1175, 163);
             this.dtgvNhanVien.TabIndex = 0;
             this.dtgvNhanVien.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dtgvNhanVien_MouseClick);
             // 
@@ -700,7 +701,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1074, 450);
+            this.ClientSize = new System.Drawing.Size(1181, 450);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.toolStrip1);

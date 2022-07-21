@@ -49,6 +49,7 @@
             // 
             // toolStrip1
             // 
+            this.toolStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(174)))), ((int)(((byte)(197)))));
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnthem,
             this.btnsua,
@@ -118,6 +119,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(174)))), ((int)(((byte)(197)))));
             this.panel2.Controls.Add(this.txtMaNH);
             this.panel2.Controls.Add(this.gunaLabel13);
             this.panel2.Controls.Add(this.txtTenNh);
@@ -140,6 +142,7 @@
             this.txtMaNH.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtMaNH.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMaNH.FocusedState.Parent = this.txtMaNH;
+            this.txtMaNH.ForeColor = System.Drawing.Color.Black;
             this.txtMaNH.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMaNH.HoverState.Parent = this.txtMaNH;
             this.txtMaNH.Location = new System.Drawing.Point(65, 32);
@@ -173,6 +176,7 @@
             this.txtTenNh.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTenNh.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTenNh.FocusedState.Parent = this.txtTenNh;
+            this.txtTenNh.ForeColor = System.Drawing.Color.Black;
             this.txtTenNh.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTenNh.HoverState.Parent = this.txtTenNh;
             this.txtTenNh.Location = new System.Drawing.Point(65, 76);
@@ -208,6 +212,7 @@
             // dtgvNhomhang
             // 
             this.dtgvNhomhang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvNhomhang.BackgroundColor = System.Drawing.Color.White;
             this.dtgvNhomhang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvNhomhang.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgvNhomhang.Location = new System.Drawing.Point(3, 16);

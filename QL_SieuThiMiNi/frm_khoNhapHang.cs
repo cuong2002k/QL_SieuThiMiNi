@@ -31,12 +31,17 @@ namespace QL_SieuThiMiNi
         private void frm_khoNhapHang_Load(object sender, EventArgs e)
         {
             dtgvNhaCungCap.DataSource = busqlykho.KHO_LayDSNCC();
-        }
+           
+                        
+         }
 
         private void dtgvNhaCungCap_MouseClick(object sender, MouseEventArgs e)
         {
             string mancc = dtgvNhaCungCap.SelectedRows[0].Cells[0].Value.ToString();
-            dtgvHangHoa.DataSource = db.HangHoa.Where(p => p.NhaCungCap == mancc).ToList();
+            var dshanghoa = from c in db.HangHoa where c.NhaCungCap == mancc
+                            select new {c.MaHH,c.TenHang, c.XuatXu,c.DinhMuc,c.SoLuong};
+            dtgvHangHoa.DataSource = dshanghoa.ToList();
+                //db.HangHoa.Where(p => p.NhaCungCap == mancc).ToList();
         }
 
         private void dtgvHangHoa_DoubleClick(object sender, EventArgs e)
@@ -90,14 +95,16 @@ namespace QL_SieuThiMiNi
             frm.ShowDialog();
         }
 
-        private void toolStripButton1_Click(object sender, EventArgs e)
-        {
-            dtgvHangHoaNhap.Rows.Clear();
-        }
+     
 
         private void btnlammoi_Click(object sender, EventArgs e)
         {
-            dtgvHangHoaNhap.Rows.Clear();
+            DialogResult result = MessageBox.Show("Bạn chắc chắn muốn hủy phiếu?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if(result == DialogResult.Yes)
+            {
+                dtgvHangHoaNhap.Rows.Clear();
+            }
+            
         }
 
         private void btnluuphieu_Click(object sender, EventArgs e)
@@ -120,6 +127,11 @@ namespace QL_SieuThiMiNi
                 MessageBox.Show("Lưu Phiếu Thành Công");
             }
            
+        }
+
+        private void btnthoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

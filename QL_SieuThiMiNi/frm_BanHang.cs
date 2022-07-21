@@ -117,8 +117,12 @@ namespace QL_SieuThiMiNi
 
         private void txtTienKhachDua_TextChanged(object sender, EventArgs e)
         {
-            if (txtTienKhachDua.Text == string.Empty) return;
-            if(int.Parse(txtTienKhachDua.Text) - int.Parse(btnTienThanhToan.Text) >= 0)
+            if (txtTienKhachDua.Text == string.Empty)
+            {
+                txtTienKhachDua.Text = "0";
+                    return;
+            }
+            if(int.Parse(txtTienKhachDua.Text) - int.Parse(btnTienThanhToan.Text) >= 0 && int.Parse(txtTienKhachDua.Text) >0)
             {
                 btnTienThanhToan.Enabled = true;
                 txtTienGuiKhach.Text = (int.Parse(txtTienKhachDua.Text) - int.Parse(btnTienThanhToan.Text)).ToString();
@@ -178,6 +182,9 @@ namespace QL_SieuThiMiNi
                     int dongia = int.Parse(i.Cells[4].Value.ToString());
                     int thanhtien = sl * dongia;
                     db.HoaDonCT.Add(new HoaDonCT(sohd, mahh, sl, dongia, thanhtien, VAT));
+                    HangHoa dbhh = db.HangHoa.Where(p => p.MaHH == mahh).SingleOrDefault();
+                    dbhh.SoLuong -= sl;
+                    db.SaveChanges();
                 }
                 db.SaveChanges();
                 //hoadon
@@ -189,6 +196,11 @@ namespace QL_SieuThiMiNi
             }
             catch (Exception) { }
             MessageBox.Show("Thanh Toán Không Thành Công");
+        }
+
+        private void btnthoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

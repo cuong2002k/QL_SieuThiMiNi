@@ -21,7 +21,7 @@ namespace QL_SieuThiMiNi
         {
             frmMain frm = new frmMain();
             frm.Show();
-        
+            this.Hide();
         }
     }
 }

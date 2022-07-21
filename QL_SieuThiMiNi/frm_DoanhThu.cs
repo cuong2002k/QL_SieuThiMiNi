@@ -57,7 +57,7 @@ namespace QL_SieuThiMiNi
         {
             chartdoanhthu.Series["Salary"].Points.Add(test("01"));
             chartdoanhthu.Series["Salary"].Points[0].Label = test("01").ToString();
-
+            
             chartdoanhthu.Series["Salary"].Points.Add(test("02"));
             chartdoanhthu.Series["Salary"].Points[1].Label = test("02").ToString();
 

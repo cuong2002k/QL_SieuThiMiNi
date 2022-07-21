@@ -19,10 +19,10 @@ namespace QL_SieuThiMiNi
         public frm_NhanVien()
         {
             InitializeComponent();
-            var maquyen = from c in db.PhanQuyen select new { MaQuyen = c.MaQuyen };
+            var maquyen = from c in db.PhanQuyen select new {  c.TenQuyen };
             foreach (var i in maquyen.ToList())
             {
-                cboQuyen.Items.Add(i.MaQuyen);
+                cboQuyen.Items.Add(i.TenQuyen);
             }
             cboGioiTinh.Items.Add(true);
             cboGioiTinh.Items.Add(false);
@@ -94,7 +94,8 @@ namespace QL_SieuThiMiNi
                 string Email = txtEmail.Text;
                 string UserName = txtUserName.Text;
                 string Password = txtPassword.Text;
-                string MaQuyen = cboQuyen.Text;
+                var quyen = db.PhanQuyen.Where(p => p.TenQuyen == cboQuyen.Text).SingleOrDefault();
+                string MaQuyen = quyen.MaQuyen;
                 string NgayVaoLam = txtNgayBD.Text;
                 string NgayNghiViec = txtNgayKT.Text;
                 bool TrangThaiTaiKhoan = txtTrangThai.Text == "True" ? true : false;
@@ -136,7 +137,10 @@ namespace QL_SieuThiMiNi
             txtEmail.Text = dtgvNhanVien.SelectedRows[0].Cells[6].Value.ToString();
             txtUserName.Text = dtgvNhanVien.SelectedRows[0].Cells[7].Value.ToString();
             txtPassword.Text = dtgvNhanVien.SelectedRows[0].Cells[8].Value.ToString();
-            cboQuyen.Text = dtgvNhanVien.SelectedRows[0].Cells[9].Value.ToString();
+            string maquyen = dtgvNhanVien.SelectedRows[0].Cells[9].Value.ToString();
+            var quyen = db.PhanQuyen.Where(p => p.MaQuyen == maquyen).SingleOrDefault();
+            cboQuyen.Text = quyen.TenQuyen;
+
             txtNgayBD.Text = dtgvNhanVien.SelectedRows[0].Cells[10].Value.ToString();
             txtNgayKT.Text = "None";
             txtTrangThai.Text = dtgvNhanVien.SelectedRows[0].Cells[12].Value.ToString();
@@ -177,7 +181,8 @@ namespace QL_SieuThiMiNi
             string Email = txtEmail.Text;
             string UserName = txtUserName.Text;
             string Password = txtPassword.Text;
-            string MaQuyen = cboQuyen.Text;
+            var quyen = db.PhanQuyen.Where(p => p.TenQuyen == cboQuyen.Text).SingleOrDefault();
+            string MaQuyen = quyen.MaQuyen;
             string NgayVaoLam = txtNgayBD.Text;
             string NgayNghiViec = txtNgayKT.Text;
             bool TrangThaiTaiKhoan = txtTrangThai.Text == "True" ? true : false;
