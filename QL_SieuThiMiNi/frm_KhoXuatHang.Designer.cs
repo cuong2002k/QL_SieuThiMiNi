@@ -84,6 +84,7 @@
             this.btnluuphieu.Size = new System.Drawing.Size(64, 51);
             this.btnluuphieu.Text = "Lưu Phiếu";
             this.btnluuphieu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnluuphieu.Click += new System.EventHandler(this.btnluuphieu_Click);
             // 
             // btnlammoi
             // 

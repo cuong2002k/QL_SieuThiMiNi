@@ -52,5 +52,10 @@ namespace QL_SieuThiMiNi
             frm_BaoCao frm = new frm_BaoCao();
             frm.ShowDialog();
         }
+
+        private void btndangxuat_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

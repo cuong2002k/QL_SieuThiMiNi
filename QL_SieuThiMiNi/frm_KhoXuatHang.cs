@@ -70,8 +70,14 @@ namespace QL_SieuThiMiNi
             sohd = DateTime.Now.ToString("dd") + DateTime.Now.ToString("HH")+ DateTime.Now.ToString("MM")  + DateTime.Now.ToString("mm") + DateTime.Now.ToString("ss");
             return sohd;
         }
+        
         private void btnlapphieu_Click(object sender, EventArgs e)
         {
+            if(dtgvHangHoaXuat.Rows.Count == 0)
+            {
+                MessageBox.Show("Vui lòng thêm hàng xóa muốn xuất");
+                return;
+            }
             DataTable tb = new DataTable();
             tb.Columns.Add("SoPhieuTra", typeof(string));
             tb.Columns.Add("TenNV", typeof(string));
@@ -99,6 +105,14 @@ namespace QL_SieuThiMiNi
         {
             dtgvHangHoaXuat.Rows.Clear();
             ///
+        }
+
+        private void btnluuphieu_Click(object sender, EventArgs e)
+        {
+            string sophieu = SoPhieuXuat();
+            string Manv = manv;
+            DateTime ngaytao = DateTime.Now;
+
         }
     }
 }
