@@ -30,7 +30,7 @@ namespace QL_SieuThiMiNi
             ChildForm.Dock = DockStyle.Fill;
             panelchildform.Controls.Add(ChildForm);
             panelchildform.Tag = ChildForm;
-            ChildForm.BringToFront();
+            //ChildForm.BringToFront();
             ChildForm.Show();
         }
         private void panel1_Paint(object sender, PaintEventArgs e)

@@ -131,6 +131,18 @@
     <Compile Include="frm_khoNhomHang.Designer.cs">
       <DependentUpon>frm_khoNhomHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_KhoXuatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_KhoXuatHang.Designer.cs">
+      <DependentUpon>frm_KhoXuatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_KhoXuatHangchild.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_KhoXuatHangchild.Designer.cs">
+      <DependentUpon>frm_KhoXuatHangchild.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +187,12 @@
       <DependentUpon>rptPhieuNhapHang.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="rptPhieuTraHang.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptPhieuTraHang.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <EmbeddedResource Include="frmrpt_HangHoa.resx">
       <DependentUpon>frmrpt_HangHoa.cs</DependentUpon>
     </EmbeddedResource>
@@ -204,6 +222,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_khoNhomHang.resx">
       <DependentUpon>frm_khoNhomHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_KhoXuatHang.resx">
+      <DependentUpon>frm_KhoXuatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_KhoXuatHangchild.resx">
+      <DependentUpon>frm_KhoXuatHangchild.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Login.resx">
       <DependentUpon>frm_Login.cs</DependentUpon>
@@ -238,6 +262,10 @@
     <EmbeddedResource Include="rptPhieuNhapHang.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptPhieuNhapHang.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptPhieuTraHang.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPhieuTraHang.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

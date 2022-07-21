@@ -109,6 +109,11 @@ namespace QL_SieuThiMiNi
 
         private void btnluuphieu_Click(object sender, EventArgs e)
         {
+            if(dtgvHangHoaNhap.Rows.Count == 0)
+            {
+                MessageBox.Show("Vui Lòng Chọn Hàng Hóa Để Nhập");
+                return;
+            }
             string sophieunhap = SoPhieuNhap();
             DateTime ngaytao = DateTime.Now;
             string nhacungcap = dtgvNhaCungCap.SelectedRows[0].Cells[0].Value.ToString();

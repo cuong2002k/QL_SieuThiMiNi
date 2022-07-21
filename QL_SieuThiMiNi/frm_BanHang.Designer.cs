@@ -188,6 +188,7 @@
             this.txtTienGuiKhach.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTienGuiKhach.HoverState.Parent = this.txtTienGuiKhach;
             this.txtTienGuiKhach.Location = new System.Drawing.Point(128, 387);
+            this.txtTienGuiKhach.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtTienGuiKhach.Name = "txtTienGuiKhach";
             this.txtTienGuiKhach.PasswordChar = '\0';
             this.txtTienGuiKhach.PlaceholderText = "";
@@ -244,6 +245,7 @@
             this.txtDiem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDiem.HoverState.Parent = this.txtDiem;
             this.txtDiem.Location = new System.Drawing.Point(102, 136);
+            this.txtDiem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtDiem.Name = "txtDiem";
             this.txtDiem.PasswordChar = '\0';
             this.txtDiem.PlaceholderText = "";
@@ -283,6 +285,7 @@
             this.txtTenKH.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTenKH.HoverState.Parent = this.txtTenKH;
             this.txtTenKH.Location = new System.Drawing.Point(102, 84);
+            this.txtTenKH.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTenKH.Name = "txtTenKH";
             this.txtTenKH.PasswordChar = '\0';
             this.txtTenKH.PlaceholderText = "";
@@ -321,6 +324,7 @@
             this.txtMaKH.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMaKH.HoverState.Parent = this.txtMaKH;
             this.txtMaKH.Location = new System.Drawing.Point(102, 32);
+            this.txtMaKH.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMaKH.Name = "txtMaKH";
             this.txtMaKH.PasswordChar = '\0';
             this.txtMaKH.PlaceholderText = "";
@@ -386,6 +390,7 @@
             this.txtTienKhachDua.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTienKhachDua.HoverState.Parent = this.txtTienKhachDua;
             this.txtTienKhachDua.Location = new System.Drawing.Point(128, 334);
+            this.txtTienKhachDua.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtTienKhachDua.Name = "txtTienKhachDua";
             this.txtTienKhachDua.PasswordChar = '\0';
             this.txtTienKhachDua.PlaceholderText = "";
