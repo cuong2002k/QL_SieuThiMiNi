@@ -98,6 +98,7 @@ namespace QL_SieuThiMiNi
         private void btnlammoi_Click(object sender, EventArgs e)
         {
             dtgvHangHoaXuat.Rows.Clear();
+            ///
         }
     }
 }
