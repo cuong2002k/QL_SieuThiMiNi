@@ -109,6 +109,7 @@
             this.guna2Button5.TabIndex = 6;
             this.guna2Button5.Text = "Xuất Hàng";
             this.guna2Button5.UseTransparentBackground = true;
+            this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
             // guna2Button4
             // 

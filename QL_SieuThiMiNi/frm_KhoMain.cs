@@ -62,5 +62,10 @@ namespace QL_SieuThiMiNi
         {
             this.Close();
         }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frm_KhoXuatHang());
+        }
     }
 }

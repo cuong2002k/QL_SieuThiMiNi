@@ -44,7 +44,6 @@
             // 
             this.btnBaoCao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(115)))), ((int)(((byte)(185)))));
             this.btnBaoCao.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBaoCao.Enabled = false;
             this.btnBaoCao.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnBaoCao.FlatAppearance.BorderSize = 0;
             this.btnBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -64,7 +63,6 @@
             // 
             this.btnkhachhang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(203)))), ((int)(((byte)(119)))));
             this.btnkhachhang.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnkhachhang.Enabled = false;
             this.btnkhachhang.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnkhachhang.FlatAppearance.BorderSize = 0;
             this.btnkhachhang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -84,7 +82,6 @@
             // 
             this.btnDoanhThu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(171)))), ((int)(((byte)(121)))));
             this.btnDoanhThu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDoanhThu.Enabled = false;
             this.btnDoanhThu.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnDoanhThu.FlatAppearance.BorderSize = 0;
             this.btnDoanhThu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -104,7 +101,6 @@
             // 
             this.btnkho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(174)))), ((int)(((byte)(197)))));
             this.btnkho.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnkho.Enabled = false;
             this.btnkho.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnkho.FlatAppearance.BorderSize = 0;
             this.btnkho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -124,7 +120,6 @@
             // 
             this.btnNhanVien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnNhanVien.Cursor = System.Windows.Forms.Cursors.AppStarting;
-            this.btnNhanVien.Enabled = false;
             this.btnNhanVien.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnNhanVien.FlatAppearance.BorderSize = 0;
             this.btnNhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -144,7 +139,6 @@
             // 
             this.btn_BanHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
             this.btn_BanHang.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_BanHang.Enabled = false;
             this.btn_BanHang.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btn_BanHang.FlatAppearance.BorderSize = 0;
             this.btn_BanHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

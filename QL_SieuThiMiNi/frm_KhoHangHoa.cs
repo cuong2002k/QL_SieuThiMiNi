@@ -206,7 +206,7 @@ namespace QL_SieuThiMiNi
         private void btnthongke_Click(object sender, EventArgs e)
         {
             rptHangHoa prthanghoa = new rptHangHoa();
-            MessageBox.Show(busQLKHO.KHO_LayDSHH().Count.ToString());
+            //MessageBox.Show(busQLKHO.KHO_LayDSHH().Count.ToString());
             prthanghoa.SetDataSource(busQLKHO.KHO_LayDSHH());
             frmrpt_HangHoa frm = new frmrpt_HangHoa();
             frm.rptvHangHoa.ReportSource = prthanghoa;

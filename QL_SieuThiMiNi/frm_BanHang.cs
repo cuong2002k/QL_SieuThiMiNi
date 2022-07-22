@@ -192,6 +192,7 @@ namespace QL_SieuThiMiNi
 
                 //
                 MessageBox.Show("Thanh Toán Thành Công");
+
                 return;
             }
             catch (Exception) { }

@@ -64,7 +64,6 @@ namespace QL_SieuThiMiNi
                     frm.btnkho.Enabled = true;
                 }
                     frm.Show();
-                    this.Hide();
             }
             
         }
