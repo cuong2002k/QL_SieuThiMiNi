@@ -18,6 +18,7 @@ namespace QL_SieuThiMiNi
         public frm_Login()
         {
             InitializeComponent();
+            frmlogin = this;
         }
         bool checktextboxnotnull()
         {

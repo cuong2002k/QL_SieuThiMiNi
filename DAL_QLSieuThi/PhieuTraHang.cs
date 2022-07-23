@@ -23,6 +23,14 @@ namespace DAL_QLSieuThi
             NgayTao = ngayTao;
         }
 
+        public PhieuTraHang(string soPhieuTra, string maNV, DateTime ngayTao, int thanhTien)
+        {
+            SoPhieuTra = soPhieuTra;
+            MaNV = maNV;
+            NgayTao = ngayTao;
+            ThanhTien = thanhTien;
+        }
+
         public string SoPhieuTra { get; set; }
         public string MaNV { get; set; }
         public System.DateTime NgayTao { get; set; }
