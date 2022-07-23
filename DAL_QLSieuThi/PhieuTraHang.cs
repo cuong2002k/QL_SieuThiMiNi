@@ -15,12 +15,12 @@ namespace DAL_QLSieuThi
     public partial class PhieuTraHang
     {
         public PhieuTraHang() { }
-        public PhieuTraHang(string soPhieuTra, string maNV, DateTime ngayTao, int thanhTien)
+
+        public PhieuTraHang(string soPhieuTra, string maNV, DateTime ngayTao)
         {
             SoPhieuTra = soPhieuTra;
             MaNV = maNV;
             NgayTao = ngayTao;
-            ThanhTien = thanhTien;
         }
 
         public string SoPhieuTra { get; set; }

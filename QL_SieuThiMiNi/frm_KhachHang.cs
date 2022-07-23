@@ -18,6 +18,15 @@ namespace QL_SieuThiMiNi
         {
             InitializeComponent();
         }
+        string makh()
+        {
+            string makh = DateTime.Now.ToString("dd")
+                          + DateTime.Now.ToString("MM")
+                          + DateTime.Now.ToString("mm")
+                          + DateTime.Now.ToString("ss")
+                          + DateTime.Now.ToString("HH");
+            return makh;
+        }
         void LayDsKhachHang()
         {
             var khachhang = from c in db.KhachHang
@@ -51,6 +60,7 @@ namespace QL_SieuThiMiNi
         private void frm_KhachHang_Load(object sender, EventArgs e)
         {
             LayDsKhachHang();
+            txtMaKH.Text = makh();
         }
 
         private void btnthem_Click(object sender, EventArgs e)
@@ -90,7 +100,7 @@ namespace QL_SieuThiMiNi
 
         private void btnlammoi_Click(object sender, EventArgs e)
         {
-            txtMaKH.Text = string.Empty;
+            txtMaKH.Text = txtMaKH.Text;
             txtTenKH.Text = string.Empty;
             txtCMND.Text = string.Empty;
             txtDiaChi.Text = string.Empty;

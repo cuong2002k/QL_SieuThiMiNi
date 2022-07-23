@@ -29,9 +29,8 @@
         private void InitializeComponent()
         {
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.btnlapphieu = new System.Windows.Forms.ToolStripButton();
             this.btnluuphieu = new System.Windows.Forms.ToolStripButton();
-            this.btnlammoi = new System.Windows.Forms.ToolStripButton();
+            this.btnhuyphieu = new System.Windows.Forms.ToolStripButton();
             this.btnthoat = new System.Windows.Forms.ToolStripButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dtgvHangHoaNhap = new System.Windows.Forms.DataGridView();
@@ -61,26 +60,14 @@
             // 
             this.toolStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(174)))), ((int)(((byte)(197)))));
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnlapphieu,
             this.btnluuphieu,
-            this.btnlammoi,
+            this.btnhuyphieu,
             this.btnthoat});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(800, 54);
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // btnlapphieu
-            // 
-            this.btnlapphieu.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_add_32;
-            this.btnlapphieu.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnlapphieu.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnlapphieu.Name = "btnlapphieu";
-            this.btnlapphieu.Size = new System.Drawing.Size(60, 51);
-            this.btnlapphieu.Text = "lập Phiếu";
-            this.btnlapphieu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnlapphieu.Click += new System.EventHandler(this.btnlapphieu_Click_1);
             // 
             // btnluuphieu
             // 
@@ -93,16 +80,16 @@
             this.btnluuphieu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnluuphieu.Click += new System.EventHandler(this.btnluuphieu_Click);
             // 
-            // btnlammoi
+            // btnhuyphieu
             // 
-            this.btnlammoi.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_close_32;
-            this.btnlammoi.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnlammoi.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnlammoi.Name = "btnlammoi";
-            this.btnlammoi.Size = new System.Drawing.Size(66, 51);
-            this.btnlammoi.Text = "Hủy Phiếu";
-            this.btnlammoi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnlammoi.Click += new System.EventHandler(this.btnlammoi_Click);
+            this.btnhuyphieu.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_close_32;
+            this.btnhuyphieu.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnhuyphieu.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnhuyphieu.Name = "btnhuyphieu";
+            this.btnhuyphieu.Size = new System.Drawing.Size(66, 51);
+            this.btnhuyphieu.Text = "Hủy Phiếu";
+            this.btnhuyphieu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnhuyphieu.Click += new System.EventHandler(this.btnlammoi_Click);
             // 
             // btnthoat
             // 
@@ -267,8 +254,7 @@
         #endregion
 
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton btnlapphieu;
-        private System.Windows.Forms.ToolStripButton btnlammoi;
+        private System.Windows.Forms.ToolStripButton btnhuyphieu;
         private System.Windows.Forms.ToolStripButton btnthoat;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Panel panel1;

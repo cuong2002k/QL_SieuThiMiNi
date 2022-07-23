@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DAL_QLSieuThi;
+using BUS_QLSieuThi;
 namespace QL_SieuThiMiNi
 {
     public partial class frm_KhoXuatHang : Form
@@ -109,10 +110,23 @@ namespace QL_SieuThiMiNi
 
         private void btnluuphieu_Click(object sender, EventArgs e)
         {
-            string sophieu = SoPhieuXuat();
-            string Manv = manv;
-            DateTime ngaytao = DateTime.Now;
-
+            try {
+                string sophieu = SoPhieuXuat();
+                string Manv = manv;
+                DateTime ngaytao = DateTime.Now;
+                PhieuTraHang phieutra = new PhieuTraHang(sophieu, manv, ngaytao);
+                db.PhieuTraHang.Add(phieutra);
+                for (int i = 0; i < dtgvHangHoaXuat.Rows.Count; i++)
+                {
+                    string mahh = dtgvHangHoaXuat.Rows[i].Cells[1].Value.ToString();
+                    int sl = int.Parse(dtgvHangHoaXuat.Rows[i].Cells[3].Value.ToString());
+                    db.PhieuTraHangCT.Add(new PhieuTraHangCT(mahh, sophieu, sl));
+                }
+                db.SaveChanges();
+                MessageBox.Show("Lưu phiếu Thành Công");
+            }
+            catch (Exception) { }
+            MessageBox.Show("Lưu phiếu Không Thành Công");
         }
     }
 }

@@ -47,6 +47,7 @@
             // 
             // chart1
             // 
+            this.chart1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(115)))), ((int)(((byte)(185)))));
             chartArea1.Name = "ChartArea1";
             this.chart1.ChartAreas.Add(chartArea1);
             this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -60,7 +61,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Đã Bán";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(386, 333);
+            this.chart1.Size = new System.Drawing.Size(476, 333);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             title1.Name = "Title1";
@@ -73,17 +74,18 @@
             this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
             this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(386, 333);
+            this.gunaPanel1.Size = new System.Drawing.Size(476, 333);
             this.gunaPanel1.TabIndex = 1;
             // 
             // chart2
             // 
+            this.chart2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(115)))), ((int)(((byte)(185)))));
             chartArea2.Name = "ChartArea1";
             this.chart2.ChartAreas.Add(chartArea2);
             this.chart2.Dock = System.Windows.Forms.DockStyle.Fill;
             legend2.Name = "Legend1";
             this.chart2.Legends.Add(legend2);
-            this.chart2.Location = new System.Drawing.Point(386, 0);
+            this.chart2.Location = new System.Drawing.Point(476, 0);
             this.chart2.Name = "chart2";
             this.chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             series2.ChartArea = "ChartArea1";
@@ -91,7 +93,7 @@
             series2.Legend = "Legend1";
             series2.Name = "Nhân Viên";
             this.chart2.Series.Add(series2);
-            this.chart2.Size = new System.Drawing.Size(420, 333);
+            this.chart2.Size = new System.Drawing.Size(330, 333);
             this.chart2.TabIndex = 2;
             this.chart2.Text = "chart2";
             title2.Name = "Title1";
@@ -102,6 +104,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(115)))), ((int)(((byte)(185)))));
             this.ClientSize = new System.Drawing.Size(806, 333);
             this.Controls.Add(this.chart2);
             this.Controls.Add(this.gunaPanel1);

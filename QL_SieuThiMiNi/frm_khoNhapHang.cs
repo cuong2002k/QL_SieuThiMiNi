@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DAL_QLSieuThi;
 using BUS_QLSieuThi;
+using System.IO;
+using OfficeOpenXml;
+using Excel = Microsoft.Office.Interop.Excel;
 namespace QL_SieuThiMiNi
 {
     public partial class frm_khoNhapHang : Form
@@ -37,11 +40,12 @@ namespace QL_SieuThiMiNi
 
         private void dtgvNhaCungCap_MouseClick(object sender, MouseEventArgs e)
         {
+            //btnlapphieu.Enabled = true;
             string mancc = dtgvNhaCungCap.SelectedRows[0].Cells[0].Value.ToString();
             var dshanghoa = from c in db.HangHoa where c.NhaCungCap == mancc
                             select new {c.MaHH,c.TenHang, c.XuatXu,c.DinhMuc,c.SoLuong};
             dtgvHangHoa.DataSource = dshanghoa.ToList();
-                //db.HangHoa.Where(p => p.NhaCungCap == mancc).ToList();
+            //db.HangHoa.Where(p => p.NhaCungCap == mancc).ToList();
         }
 
         private void dtgvHangHoa_DoubleClick(object sender, EventArgs e)
@@ -59,7 +63,7 @@ namespace QL_SieuThiMiNi
             
             string mahh = dtgvHangHoa.SelectedRows[0].Cells[0].Value.ToString();
             string tenhh = dtgvHangHoa.SelectedRows[0].Cells[1].Value.ToString();
-            string xuatxu = dtgvHangHoa.SelectedRows[0].Cells[3].Value.ToString();
+            string xuatxu = dtgvHangHoa.SelectedRows[0].Cells[2].Value.ToString();
             string sl = Convert.ToString(SoLuong);            
             for(int i = 0; i < dtgvHangHoaNhap.Rows.Count; i++)
             {
@@ -73,30 +77,10 @@ namespace QL_SieuThiMiNi
             }
             dtgvHangHoaNhap.Rows.Add((dtgvHangHoaNhap.Rows.Count+1).ToString(),mahh,tenhh,xuatxu,sl);
         }
-
-    
-
         private void btnlapphieu_Click_1(object sender, EventArgs e)
         {
-            DataTable tb = new DataTable();
-            tb.Columns.Add("MaHH", typeof(string));
-            tb.Columns.Add("TenHang", typeof(string));
-            tb.Columns.Add("XuatXu", typeof(string));
-            tb.Columns.Add("SoLuong", typeof(string));
-            foreach(DataGridViewRow i in dtgvHangHoaNhap.Rows)
-            {
-                tb.Rows.Add(i.Cells[1].Value, i.Cells[2].Value, i.Cells[3].Value, i.Cells[4].Value);
-            }
-            NhanVien nv = db.NhanVien.Find(manv);
-            rptPhieuNhapHang rptphieunhap = new rptPhieuNhapHang();
-            rptphieunhap.SetDataSource(tb);
-            frmrpt_HangHoa frm = new frmrpt_HangHoa();
-            frm.rptvHangHoa.ReportSource = rptphieunhap;
-            frm.ShowDialog();
+            
         }
-
-     
-
         private void btnlammoi_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Bạn chắc chắn muốn hủy phiếu?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
@@ -117,7 +101,6 @@ namespace QL_SieuThiMiNi
             string sophieunhap = SoPhieuNhap();
             DateTime ngaytao = DateTime.Now;
             string nhacungcap = dtgvNhaCungCap.SelectedRows[0].Cells[0].Value.ToString();
-
             if (busqlykho.KHO_LuuPhieuNhap(new PhieuNhapHang(sophieunhap, manv, ngaytao, nhacungcap)) == true)
             {
                 foreach(DataGridViewRow i in dtgvHangHoaNhap.Rows)
@@ -128,7 +111,21 @@ namespace QL_SieuThiMiNi
                     int vAT = 0;
                     busqlykho.KHO_LuuPhieuNhapCT(new PhieuNhapHangCT(maHangNhap, soPhieu, soLuongNhap, vAT));
                 }
-               
+                DataTable tb = new DataTable();
+                tb.Columns.Add("MaHH", typeof(string));
+                tb.Columns.Add("TenHang", typeof(string));
+                tb.Columns.Add("XuatXu", typeof(string));
+                tb.Columns.Add("SoLuong", typeof(string));
+                foreach (DataGridViewRow i in dtgvHangHoaNhap.Rows)
+                {
+                    tb.Rows.Add(i.Cells[1].Value, i.Cells[2].Value, i.Cells[3].Value, i.Cells[4].Value);
+                }
+                NhanVien nv = db.NhanVien.Find(manv);
+                rptPhieuNhapHang rptphieunhap = new rptPhieuNhapHang();
+                rptphieunhap.SetDataSource(tb);
+                frmrpt_HangHoa frm = new frmrpt_HangHoa();
+                frm.rptvHangHoa.ReportSource = rptphieunhap;
+                frm.ShowDialog();
                 MessageBox.Show("Lưu Phiếu Thành Công");
             }
            
@@ -137,6 +134,11 @@ namespace QL_SieuThiMiNi
         private void btnthoat_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnexportexcel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

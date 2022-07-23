@@ -55,6 +55,7 @@
             // 
             // chartdoanhthu
             // 
+            this.chartdoanhthu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(171)))), ((int)(((byte)(121)))));
             chartArea1.Name = "ChartArea1";
             this.chartdoanhthu.ChartAreas.Add(chartArea1);
             this.chartdoanhthu.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -78,7 +79,7 @@
             // gunaElipsePanel1
             // 
             this.gunaElipsePanel1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaElipsePanel1.BaseColor = System.Drawing.Color.White;
+            this.gunaElipsePanel1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(171)))), ((int)(((byte)(121)))));
             this.gunaElipsePanel1.Controls.Add(this.panel3);
             this.gunaElipsePanel1.Controls.Add(this.panel2);
             this.gunaElipsePanel1.Controls.Add(this.panel1);
@@ -90,7 +91,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.Blue;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(203)))), ((int)(((byte)(119)))));
             this.panel3.Controls.Add(this.lblsptrongkho);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -125,7 +126,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.panel2.Controls.Add(this.lblDonHang);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -208,6 +209,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(171)))), ((int)(((byte)(121)))));
             this.ClientSize = new System.Drawing.Size(827, 433);
             this.Controls.Add(this.chartdoanhthu);
             this.Controls.Add(this.gunaElipsePanel1);

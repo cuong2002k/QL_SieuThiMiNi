@@ -122,7 +122,7 @@ namespace QL_SieuThiMiNi
                 txtTienKhachDua.Text = "0";
                     return;
             }
-            if(int.Parse(txtTienKhachDua.Text) - int.Parse(btnTienThanhToan.Text) >= 0 && int.Parse(txtTienKhachDua.Text) >0)
+            if(int.Parse(txtTienKhachDua.Text) - int.Parse(btnTienThanhToan.Text) >= 0 && int.Parse(txtTienKhachDua.Text) >0 && dtgvHangHoaBan.RowCount > 1)
             {
                 btnTienThanhToan.Enabled = true;
                 txtTienGuiKhach.Text = (int.Parse(txtTienKhachDua.Text) - int.Parse(btnTienThanhToan.Text)).ToString();

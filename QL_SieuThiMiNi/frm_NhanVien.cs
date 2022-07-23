@@ -16,6 +16,15 @@ namespace QL_SieuThiMiNi
         SieuThiMiniEntities db = new SieuThiMiniEntities();
         BUSQLyKho qlykho = new BUSQLyKho();
         BUSNhanVien busnhanvien = new BUSNhanVien();
+        string manv()
+        {
+            string mahh = DateTime.Now.ToString("MM")
+                          + DateTime.Now.ToString("dd")
+                          + DateTime.Now.ToString("mm")
+                          + DateTime.Now.ToString("ss")
+                          + DateTime.Now.ToString("HH");
+            return mahh;
+        }
         public frm_NhanVien()
         {
             InitializeComponent();
@@ -26,6 +35,8 @@ namespace QL_SieuThiMiNi
             }
             cboGioiTinh.Items.Add(true);
             cboGioiTinh.Items.Add(false);
+            cboGioiTinh.SelectedIndex = 0;
+            cboQuyen.SelectedIndex = 0;
         }
         bool checktextboxnotnull()
         {
@@ -79,6 +90,8 @@ namespace QL_SieuThiMiNi
         private void frm_NhanVien_Load(object sender, EventArgs e)
         {
             LayDSNV();
+            txtMaNV.Text = manv();
+           
         }
 
         private void btnthem_Click(object sender, EventArgs e)
@@ -154,7 +167,7 @@ namespace QL_SieuThiMiNi
 
         private void btnlammoi_Click(object sender, EventArgs e)
         {
-            txtMaNV.Text = string.Empty;
+            txtMaNV.Text = manv();
             txtTenNV.Text = string.Empty;
             cboGioiTinh.Text = string.Empty;
             txtNgaySinh.Text = string.Empty;

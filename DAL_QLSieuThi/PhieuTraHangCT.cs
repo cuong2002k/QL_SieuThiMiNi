@@ -15,7 +15,7 @@ namespace DAL_QLSieuThi
     public partial class PhieuTraHangCT
     {
         public PhieuTraHangCT() { }
-        public PhieuTraHangCT(string maHangTra, string soPhieuTra, int? soLuongTra, string lydotrahang)
+        public PhieuTraHangCT(string maHangTra, string soPhieuTra, int soLuongTra, string lydotrahang)
         {
             MaHangTra = maHangTra;
             SoPhieuTra = soPhieuTra;
@@ -23,9 +23,16 @@ namespace DAL_QLSieuThi
             this.lydotrahang = lydotrahang;
         }
 
+        public PhieuTraHangCT(string maHangTra, string soPhieuTra, int soLuongTra)
+        {
+            MaHangTra = maHangTra;
+            SoPhieuTra = soPhieuTra;
+            SoLuongTra = soLuongTra;
+        }
+
         public string MaHangTra { get; set; }
         public string SoPhieuTra { get; set; }
-        public Nullable<int> SoLuongTra { get; set; }
+        public int SoLuongTra { get; set; }
         public string lydotrahang { get; set; }
     }
 }

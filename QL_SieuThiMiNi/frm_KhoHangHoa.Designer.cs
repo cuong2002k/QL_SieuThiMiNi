@@ -35,6 +35,7 @@
             this.btnxoa = new System.Windows.Forms.ToolStripButton();
             this.btnlammoi = new System.Windows.Forms.ToolStripButton();
             this.btnthongke = new System.Windows.Forms.ToolStripButton();
+            this.btnexportexcel = new System.Windows.Forms.ToolStripButton();
             this.btnthoat = new System.Windows.Forms.ToolStripButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -44,7 +45,6 @@
             this.gunaLabel13 = new Guna.UI.WinForms.GunaLabel();
             this.txtVAT = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel10 = new Guna.UI.WinForms.GunaLabel();
-            this.txtTrangThai = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel11 = new Guna.UI.WinForms.GunaLabel();
             this.txtSL = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel12 = new Guna.UI.WinForms.GunaLabel();
@@ -66,6 +66,7 @@
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.txtMaHH = new Guna.UI2.WinForms.Guna2TextBox();
             this.cboNH = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtTrangThai = new Guna.UI2.WinForms.Guna2ComboBox();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -82,6 +83,7 @@
             this.btnxoa,
             this.btnlammoi,
             this.btnthongke,
+            this.btnexportexcel,
             this.btnthoat});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
@@ -144,6 +146,18 @@
             this.btnthongke.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnthongke.Click += new System.EventHandler(this.btnthongke_Click);
             // 
+            // btnexportexcel
+            // 
+            this.btnexportexcel.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_export_excel_32;
+            this.btnexportexcel.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnexportexcel.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnexportexcel.Name = "btnexportexcel";
+            this.btnexportexcel.Size = new System.Drawing.Size(90, 51);
+            this.btnexportexcel.Text = "Thống kê Excel";
+            this.btnexportexcel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnexportexcel.ToolTipText = "Thống kê Excel";
+            this.btnexportexcel.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
             // btnthoat
             // 
             this.btnthoat.Image = global::QL_SieuThiMiNi.Properties.Resources.icons8_sign_out_32;
@@ -192,11 +206,11 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(174)))), ((int)(((byte)(197)))));
+            this.panel2.Controls.Add(this.txtTrangThai);
             this.panel2.Controls.Add(this.cboNCC);
             this.panel2.Controls.Add(this.gunaLabel13);
             this.panel2.Controls.Add(this.txtVAT);
             this.panel2.Controls.Add(this.gunaLabel10);
-            this.panel2.Controls.Add(this.txtTrangThai);
             this.panel2.Controls.Add(this.gunaLabel11);
             this.panel2.Controls.Add(this.txtSL);
             this.panel2.Controls.Add(this.gunaLabel12);
@@ -243,7 +257,7 @@
             this.cboNCC.Name = "cboNCC";
             this.cboNCC.ShadowDecoration.Parent = this.cboNCC;
             this.cboNCC.Size = new System.Drawing.Size(200, 36);
-            this.cboNCC.TabIndex = 26;
+            this.cboNCC.TabIndex = 9;
             // 
             // gunaLabel13
             // 
@@ -279,7 +293,7 @@
             this.txtVAT.SelectedText = "";
             this.txtVAT.ShadowDecoration.Parent = this.txtVAT;
             this.txtVAT.Size = new System.Drawing.Size(200, 36);
-            this.txtVAT.TabIndex = 24;
+            this.txtVAT.TabIndex = 4;
             // 
             // gunaLabel10
             // 
@@ -291,31 +305,6 @@
             this.gunaLabel10.Size = new System.Drawing.Size(58, 15);
             this.gunaLabel10.TabIndex = 23;
             this.gunaLabel10.Text = "TrangThai";
-            // 
-            // txtTrangThai
-            // 
-            this.txtTrangThai.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTrangThai.BorderRadius = 20;
-            this.txtTrangThai.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTrangThai.DefaultText = "";
-            this.txtTrangThai.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtTrangThai.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtTrangThai.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTrangThai.DisabledState.Parent = this.txtTrangThai;
-            this.txtTrangThai.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTrangThai.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTrangThai.FocusedState.Parent = this.txtTrangThai;
-            this.txtTrangThai.ForeColor = System.Drawing.Color.Black;
-            this.txtTrangThai.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTrangThai.HoverState.Parent = this.txtTrangThai;
-            this.txtTrangThai.Location = new System.Drawing.Point(837, 120);
-            this.txtTrangThai.Name = "txtTrangThai";
-            this.txtTrangThai.PasswordChar = '\0';
-            this.txtTrangThai.PlaceholderText = "";
-            this.txtTrangThai.SelectedText = "";
-            this.txtTrangThai.ShadowDecoration.Parent = this.txtTrangThai;
-            this.txtTrangThai.Size = new System.Drawing.Size(200, 36);
-            this.txtTrangThai.TabIndex = 22;
             // 
             // gunaLabel11
             // 
@@ -344,14 +333,14 @@
             this.txtSL.ForeColor = System.Drawing.Color.Black;
             this.txtSL.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSL.HoverState.Parent = this.txtSL;
-            this.txtSL.Location = new System.Drawing.Point(837, 78);
+            this.txtSL.Location = new System.Drawing.Point(844, 77);
             this.txtSL.Name = "txtSL";
             this.txtSL.PasswordChar = '\0';
             this.txtSL.PlaceholderText = "";
             this.txtSL.SelectedText = "";
             this.txtSL.ShadowDecoration.Parent = this.txtSL;
             this.txtSL.Size = new System.Drawing.Size(200, 36);
-            this.txtSL.TabIndex = 20;
+            this.txtSL.TabIndex = 12;
             // 
             // gunaLabel12
             // 
@@ -380,14 +369,14 @@
             this.txtDinhMuc.ForeColor = System.Drawing.Color.Black;
             this.txtDinhMuc.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDinhMuc.HoverState.Parent = this.txtDinhMuc;
-            this.txtDinhMuc.Location = new System.Drawing.Point(837, 36);
+            this.txtDinhMuc.Location = new System.Drawing.Point(844, 35);
             this.txtDinhMuc.Name = "txtDinhMuc";
             this.txtDinhMuc.PasswordChar = '\0';
             this.txtDinhMuc.PlaceholderText = "";
             this.txtDinhMuc.SelectedText = "";
             this.txtDinhMuc.ShadowDecoration.Parent = this.txtDinhMuc;
             this.txtDinhMuc.Size = new System.Drawing.Size(200, 36);
-            this.txtDinhMuc.TabIndex = 18;
+            this.txtDinhMuc.TabIndex = 11;
             // 
             // gunaLabel7
             // 
@@ -423,7 +412,7 @@
             this.txtMaVach.SelectedText = "";
             this.txtMaVach.ShadowDecoration.Parent = this.txtMaVach;
             this.txtMaVach.Size = new System.Drawing.Size(200, 36);
-            this.txtMaVach.TabIndex = 16;
+            this.txtMaVach.TabIndex = 10;
             // 
             // gunaLabel8
             // 
@@ -470,7 +459,7 @@
             this.txtDVT.SelectedText = "";
             this.txtDVT.ShadowDecoration.Parent = this.txtDVT;
             this.txtDVT.Size = new System.Drawing.Size(200, 36);
-            this.txtDVT.TabIndex = 12;
+            this.txtDVT.TabIndex = 8;
             // 
             // gunaLabel6
             // 
@@ -506,7 +495,7 @@
             this.txtGiaBan.SelectedText = "";
             this.txtGiaBan.ShadowDecoration.Parent = this.txtGiaBan;
             this.txtGiaBan.Size = new System.Drawing.Size(200, 36);
-            this.txtGiaBan.TabIndex = 10;
+            this.txtGiaBan.TabIndex = 7;
             // 
             // gunaLabel5
             // 
@@ -542,7 +531,7 @@
             this.txtGiaNhap.SelectedText = "";
             this.txtGiaNhap.ShadowDecoration.Parent = this.txtGiaNhap;
             this.txtGiaNhap.Size = new System.Drawing.Size(200, 36);
-            this.txtGiaNhap.TabIndex = 8;
+            this.txtGiaNhap.TabIndex = 6;
             // 
             // gunaLabel4
             // 
@@ -578,7 +567,7 @@
             this.txtXuatXu.SelectedText = "";
             this.txtXuatXu.ShadowDecoration.Parent = this.txtXuatXu;
             this.txtXuatXu.Size = new System.Drawing.Size(200, 36);
-            this.txtXuatXu.TabIndex = 6;
+            this.txtXuatXu.TabIndex = 5;
             // 
             // gunaLabel3
             // 
@@ -625,7 +614,7 @@
             this.txtTenHH.SelectedText = "";
             this.txtTenHH.ShadowDecoration.Parent = this.txtTenHH;
             this.txtTenHH.Size = new System.Drawing.Size(200, 36);
-            this.txtTenHH.TabIndex = 3;
+            this.txtTenHH.TabIndex = 2;
             // 
             // gunaLabel1
             // 
@@ -649,6 +638,7 @@
             this.txtMaHH.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtMaHH.DisabledState.Parent = this.txtMaHH;
             this.txtMaHH.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMaHH.Enabled = false;
             this.txtMaHH.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMaHH.FocusedState.Parent = this.txtMaHH;
             this.txtMaHH.ForeColor = System.Drawing.Color.Black;
@@ -658,6 +648,7 @@
             this.txtMaHH.Name = "txtMaHH";
             this.txtMaHH.PasswordChar = '\0';
             this.txtMaHH.PlaceholderText = "";
+            this.txtMaHH.ReadOnly = true;
             this.txtMaHH.SelectedText = "";
             this.txtMaHH.ShadowDecoration.Parent = this.txtMaHH;
             this.txtMaHH.Size = new System.Drawing.Size(200, 36);
@@ -682,7 +673,28 @@
             this.cboNH.Name = "cboNH";
             this.cboNH.ShadowDecoration.Parent = this.cboNH;
             this.cboNH.Size = new System.Drawing.Size(200, 36);
-            this.cboNH.TabIndex = 0;
+            this.cboNH.TabIndex = 3;
+            // 
+            // txtTrangThai
+            // 
+            this.txtTrangThai.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtTrangThai.BackColor = System.Drawing.Color.Transparent;
+            this.txtTrangThai.BorderRadius = 20;
+            this.txtTrangThai.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtTrangThai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtTrangThai.FocusedColor = System.Drawing.Color.Empty;
+            this.txtTrangThai.FocusedState.Parent = this.txtTrangThai;
+            this.txtTrangThai.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtTrangThai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.txtTrangThai.FormattingEnabled = true;
+            this.txtTrangThai.HoverState.Parent = this.txtTrangThai;
+            this.txtTrangThai.ItemHeight = 30;
+            this.txtTrangThai.ItemsAppearance.Parent = this.txtTrangThai;
+            this.txtTrangThai.Location = new System.Drawing.Point(844, 119);
+            this.txtTrangThai.Name = "txtTrangThai";
+            this.txtTrangThai.ShadowDecoration.Parent = this.txtTrangThai;
+            this.txtTrangThai.Size = new System.Drawing.Size(200, 36);
+            this.txtTrangThai.TabIndex = 26;
             // 
             // frm_KhoHangHoa
             // 
@@ -734,7 +746,6 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI2.WinForms.Guna2TextBox txtTenHH;
         private Guna.UI.WinForms.GunaLabel gunaLabel10;
-        private Guna.UI2.WinForms.Guna2TextBox txtTrangThai;
         private Guna.UI.WinForms.GunaLabel gunaLabel11;
         private Guna.UI2.WinForms.Guna2TextBox txtSL;
         private Guna.UI.WinForms.GunaLabel gunaLabel12;
@@ -747,5 +758,7 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel13;
         private Guna.UI2.WinForms.Guna2TextBox txtVAT;
         private Guna.UI2.WinForms.Guna2ComboBox cboNCC;
+        private System.Windows.Forms.ToolStripButton btnexportexcel;
+        private Guna.UI2.WinForms.Guna2ComboBox txtTrangThai;
     }
 }
