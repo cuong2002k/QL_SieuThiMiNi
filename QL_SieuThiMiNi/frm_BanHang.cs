@@ -13,7 +13,7 @@ namespace QL_SieuThiMiNi
 {
     public partial class frm_BanHang : Form
     {
-        string manv = "NV012";
+        string manv = frm_Login.frmlogin.manv;
         public frm_BanHang()
         {
             InitializeComponent();
@@ -189,7 +189,11 @@ namespace QL_SieuThiMiNi
                 db.SaveChanges();
                 //hoadon
                 xuathoadon(sohd);
-
+                if(txtMaKH.Text != string.Empty && txtTenKH.Text !=string.Empty && txtDiem.Text != string.Empty)
+                {
+                    KhachHang kh = db.KhachHang.Where(p => p.MaKH == txtMaKH.Text).SingleOrDefault();
+                    kh.Diem = kh.Diem + int.Parse(btnTienThanhToan.Text) / 1000;
+                }
                 //
                 MessageBox.Show("Thanh Toán Thành Công");
 

@@ -142,6 +142,7 @@
             this.btnthongke.Size = new System.Drawing.Size(60, 51);
             this.btnthongke.Text = "Thống kê";
             this.btnthongke.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnthongke.Click += new System.EventHandler(this.btnthongke_Click);
             // 
             // btnthoat
             // 

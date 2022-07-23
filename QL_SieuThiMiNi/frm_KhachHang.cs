@@ -169,5 +169,14 @@ namespace QL_SieuThiMiNi
         {
             this.Close();
         }
+
+        private void btnthongke_Click(object sender, EventArgs e)
+        {
+            rptKH rptkh = new rptKH();
+            rptkh.SetDataSource(db.KhachHang.ToList());
+            frmrpt_HangHoa frm = new frmrpt_HangHoa();
+            frm.rptvHangHoa.ReportSource = rptkh;
+            frm.ShowDialog();
+        }
     }
 }

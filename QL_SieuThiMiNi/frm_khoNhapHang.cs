@@ -18,7 +18,7 @@ namespace QL_SieuThiMiNi
     {
         BUSQLyKho busqlykho = new BUSQLyKho();
         SieuThiMiniEntities db = new SieuThiMiniEntities();
-        string manv = "NV01";
+        string manv = frm_Login.frmlogin.manv;
         public static frm_khoNhapHang frmNH = new frm_khoNhapHang();
         public frm_khoNhapHang()
         {

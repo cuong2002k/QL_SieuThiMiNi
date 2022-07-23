@@ -15,7 +15,7 @@ namespace QL_SieuThiMiNi
     {
         public static frm_KhoXuatHang frmxh = new frm_KhoXuatHang();
         SieuThiMiniEntities db = new SieuThiMiniEntities();
-        string manv = "NV012";
+        string manv = frm_Login.frmlogin.manv;
         public frm_KhoXuatHang()
         {
             InitializeComponent();

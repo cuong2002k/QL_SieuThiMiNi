@@ -13,6 +13,7 @@ namespace QL_SieuThiMiNi
     public partial class frm_Login : Form
     {
         public static frm_Login frmlogin = new frm_Login();
+        public string manv;
         SieuThiMiniEntities db = new SieuThiMiniEntities();
         public frm_Login()
         {
@@ -45,6 +46,7 @@ namespace QL_SieuThiMiNi
                     return;
                 }
                 frmMain frm = new frmMain();
+                manv = nhanvien.MaNV;
                 if (nhanvien.MaQuyen.Equals("MQ01"))
                 {
                     frm.btn_BanHang.Enabled = true;

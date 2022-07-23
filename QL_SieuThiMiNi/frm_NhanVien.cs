@@ -228,5 +228,14 @@ namespace QL_SieuThiMiNi
                 MessageBox.Show("Xóa Nhân Viên Thất bại");
             }
         }
+
+        private void btnthongke_Click(object sender, EventArgs e)
+        {
+            rptNV rptkh = new rptNV();
+            rptkh.SetDataSource(db.NhanVien.ToList());
+            frmrpt_HangHoa frm = new frmrpt_HangHoa();
+            frm.rptvHangHoa.ReportSource = rptkh;
+            frm.ShowDialog();
+        }
     }
 }
